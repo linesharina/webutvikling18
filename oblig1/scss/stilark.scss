@@ -1,5 +1,49 @@
-h1 {
-	color: red;
+$small: 480px;
+$medium: 782px;
+$large: 1200px;
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+.header-img {
+	background-image: url("../img/header-img.jpg");
+	background-size: cover;
+	background-position: center; 
+	width: 100%;
+	max-width: 1920px;
+
+	&-content {
+		display: block;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
+
+		h1, h2, a{
+			text-align: center;
+			color: white;
+		}
+	}
+
+	@media (max-width: $medium) {
+		height: 300px;
+	}
+
+	@media (min-width: $medium+1) {
+		height: 600px;
+	}
+
+
+}
+
 .navbar {
 	
 	 	display: flex; 
