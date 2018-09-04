@@ -11,8 +11,26 @@ $large: 1200px;
 
 html {
 	box-sizing: border-box;
-	font-size: 62.5%;
+	font-size: 100%;
 }
+
+body {
+	font-size: 1em;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h2, a {
+	font-family: 'Playfair Display', serif;
+}
+
 
 .header-img {
 	background-image: url("../img/header-img.jpg");
@@ -24,20 +42,34 @@ html {
 	&-content {
 		display: block;
 		width: 100%;
-		max-width: 300px;
+		max-width: 700px;
 		margin: 0 auto;
 
-		h1, h2, a{
+		h1, h2, a {
 			text-align: center;
-			color: white;
+			color: black;
+		}
+		h1 {
+			font-family: 'Nothing You Could Do', cursive;
+			font-size: 2.5em;
+		}
+
+		a {
+			font-size: 1.2em;
 		}
 	}
 
 	@media (max-width: $medium) {
 		height: 300px;
+		padding-top: 20px;
+
+		a {
+			font-size: 1em;
+		}
 	}
 
 	@media (min-width: $medium+1) {
+		padding-top: 130px;
 		height: 600px;
 	}
 
@@ -45,15 +77,79 @@ html {
 }
 
 .navbar {
-	
-	 	display: flex; 
-		flex-direction: row;
-		width: 100%;
-		max-width: 900px;
-		list-style-type: none; 
+ 	display: flex; 
+	width: 100%;
+	max-width: 900px;
+	list-style-type: none; 
+	flex-direction: row;
+	justify-content: center;
 
 	a {
 		width: 100%;
 		text-decoration: none;
 	}
+
+	@media (max-width: $medium) {
+		flex-wrap: wrap;
+
+		a {
+			max-width: 100px;
+			margin-bottom: 10px;
+		}
+	}
+
+	@media (min-width: $medium+1) {
+	}
+}
+
+.articles {
+	h2 {
+		text-align: center;
+		padding: 50px 0;
+	}
+
+	&-inner {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		margin: 0 auto;
+
+		article {
+			width: 100%;
+			max-width: 333px;
+			padding: 0 15px 100px;
+
+			img {
+				width: 100%;
+				max-width: 300px;
+			}
+
+			p {
+				padding: 5px 0 30px;
+			}
+		}
+
+		@media (max-width: $medium) {
+			max-width: 300px;
+		}
+
+		@media (min-width: $medium+1) {
+			max-width: 1000px;
+		}
+	}
+}
+
+.button {
+	padding: 10px 20px;
+	background-color: #c4e2ec;
+	text-decoration: none;
+	color: black;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 40px;
+	text-align: center;
 }
