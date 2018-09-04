@@ -6,7 +6,7 @@
 				<img src="img/test1.jpg">
 				<h3>Oppgave 2</h3>
 				<p>Laget en HTML fil som inneholder strukturkode for en enkel artikkel.</p>
-				<a href="#" class="button">Les mer</a>
+				<a href="/webutvikling18/oblig1/artikkel.php" class="button">Les mer</a>
 			</article>
 			<article>
 				<img src="img/test2.jpg">
