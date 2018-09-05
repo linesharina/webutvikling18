@@ -4,10 +4,9 @@
 		<article class="article">
 			<div class="article-left">
 				<h3>Oppgave 2</h3>
-				<p>Dato utført: 05.09.2018</p>
+				<p id="article-date">Dato utført: 05.09.2018</p>
 				<p>I denne oppgaven skulle vi lage en HTML-fil som inneholder strukturkode for en enkel artikkel. 
 				Denne skal benyttes videre i de andre oppgavene for å gjøre sidene uniforme.</p>
-				<h4>Minimumskrav</h4>
 				<p>Følgende punkter var minimumskravet for å få oppgavene godkjent:</p>
 				<ul>
 					<li>En enkel header med følgende innhold:
