@@ -246,3 +246,7 @@ footer {
   background-color: #da5f79;
 }
 
+#article-date {
+  color: #da5f79;
+  font-weight: bold;
+}
