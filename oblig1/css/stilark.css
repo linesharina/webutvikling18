@@ -60,10 +60,13 @@ p, li {
   font-size: 1.2em;
 }
 
+.header-img {
+    height: 100vh;
+}
+
 @media (max-width: 782px) {
   .header-img {
-    height: 300px;
-    padding-top: 20px;
+    padding-top: 80px;
   }
   .header-img a {
     font-size: 1em;
@@ -72,8 +75,7 @@ p, li {
 
 @media (min-width: 783px) {
   .header-img {
-    padding-top: 130px;
-    height: 600px;
+    padding-top: 150px;
   }
 }
 
