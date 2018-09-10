@@ -31,6 +31,24 @@ p, li {
   font-family: 'Lato', sans-serif;
 }
 
+footer {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+footer a {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+}
+
 .header-img {
   background-image: url("../img/header-img.jpg");
   background-size: cover;
@@ -66,7 +84,7 @@ p, li {
 
 @media (max-width: 782px) {
   .header-img {
-    padding-top: 80px;
+    padding-top: 100px;
   }
   .header-img a {
     font-size: 1em;
@@ -157,13 +175,6 @@ p, li {
   background-color: #c4e2ec;
   text-decoration: none;
   color: black;
-}
-
-footer {
-  background-color: black;
-  color: white;
-  padding: 40px;
-  text-align: center;
 }
 
 .article {
