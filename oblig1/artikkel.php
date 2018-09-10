@@ -1,6 +1,8 @@
 <?php require('header.php') ?>
 	<main class="articles">
-		<h2>Oblig 1</h2>
+		<header>
+			<h2>Oblig 1</h2>
+		</header>
 		<article class="article">
 			<div class="article-left">
 				<h3>Oppgave 2</h3>
