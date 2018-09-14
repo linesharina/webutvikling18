@@ -111,7 +111,8 @@ footer a:focus {
   text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar a:focus {
   color: #685fda;
   text-decoration: underline;
 }
@@ -175,6 +176,12 @@ footer a:focus {
   background-color: #c4e2ec;
   text-decoration: none;
   color: black;
+}
+
+.button:hover,
+.button:focus {
+  color: #685fda;
+  text-decoration: underline;
 }
 
 .article {
