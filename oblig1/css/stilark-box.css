@@ -1,0 +1,58 @@
+.boxes,
+.box-props {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 100px 0;
+ }
+
+.box-content, 
+.box-padding, 
+.box-padding, 
+.box-border, 
+.box-margin {
+  height: 250px;
+  width: 250px;
+  background-color: #c4ecc4;
+}
+
+
+.box-content {
+
+}
+
+.box-padding {
+  padding: 50px;
+
+}
+
+.box-border {
+  border: 50px solid #66e066;
+}
+
+.box-margin {
+  margin: 50px;
+}
+
+.box-overflow,
+.box-border-radius,
+.box-shadow {
+  height: 250px;
+  width: 250px;
+  background-color: #c4e2ec;
+  padding: 30px;
+}
+
+.box-overflow {
+  max-height: 250px;
+  overflow: auto;
+}
+
+.box-border-radius {
+  border-radius: 20px 40px;
+}
+
+.box-shadow {
+  box-shadow: 1px 1px 15px 20px #95daf1;
+}
