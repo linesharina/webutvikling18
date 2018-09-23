@@ -4,7 +4,9 @@
 	<title>Webutvikling 2018</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
-	<link rel="stylesheet" href="stylesheet.css" />
+	<link rel="stylesheet" href="css/stylesheet.css" />
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
@@ -18,30 +20,63 @@
 			<a href="#">CSS Layouts</a>
 		</nav>
 		<main>
-			<article>
-				<h2>Git/Github</h2>
-				<p>Beskrivelse av hva Git og Github er, fordeler og mine tanker</p>
-				<a href="#" class="button">Les mer</a>
-			</article>
-			<article>
-				<h2>Media typer</h2>
-				<p>Hva er Media typer og hvordan man bruker disse?</p>
-				<a href="#" class="button">Les mer</a>
-			</article>
-			<article>
-				<h2>CSS Layouts</h2>
-				<p>Forskjellige metoder for layouts i CSS</p>
-				<a href="#" class="button">Les mer</a>
-			</article>
+			<header>
+				<h2>Artikler</h2>
+			</header>
+			<section class="articles">
+				<article>
+					<img src="img/header-img.jpg">
+					<div class="article-content">
+						<h3>Git/Github</h3>
+						<p>Beskrivelse av Git og Github</p>
+						<div class="article-read-more">
+							<a href="#">Les mer</a>
+						</div>
+					</div>
+				</article>
+				<article>
+					<img src="img/header-img.jpg">
+					<div class="article-content">
+						<h3>Media typer</h3>
+						<p>Hva er Media typer og hvordan man bruker disse?</p>
+						<div class="article-read-more">
+							<a href="#">Les mer</a>
+						</div>
+					</div>
+				</article>
+				<article>
+					<img src="img/header-img.jpg">
+					<div class="article-content">
+						<h3>CSS Layouts</h3>
+						<p>Forskjellige metoder for layouts i CSS</p>
+						<div class="article-read-more">
+							<a href="#">Les mer</a>
+						</div>
+					</div>
+				</article>
+			</section>
 		</main>
 		<aside>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/Zftx68K-1D4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<div>
+				<h3>Artikler</h3>
+				<ul>
+					<li><a href="#">Artikkel 1</a></li>
+					<li><a href="#">Artikkel 2</a></li>
+					<li><a href="#">Artikkel 3</a></li>
+					<li><a href="#">Artikkel 4</a></li>
+					<li><a href="#">Artikkel 5</a></li>
+				</ul>
+			</div>
+			<a href="#" class="button">Knapp</a>
+			<div>
+				<h3>Video</h3>
+				<iframe src="https://www.youtube.com/embed/Zftx68K-1D4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
 		</aside>
 		<footer>
 			<a href="mailto:linesaa@hiof.no">linesaa@hiof.no</a>
 			<p>&copy; <date datetime="2018">2018</date> - Line Sharina Hagen</p>
 		</footer>
 	</div>
-
 </body>
 </html>
