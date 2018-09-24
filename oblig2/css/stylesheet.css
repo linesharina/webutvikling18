@@ -50,7 +50,7 @@ a, p {
 	grid-column: 1/13;
 	background-image: url('../img/header-img.jpg');
 	background-size: cover;
-	background-position: center 65%;
+	background-position: top;
 	background-repeat: no-repeat;
 	text-align: center;
 }
