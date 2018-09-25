@@ -92,7 +92,7 @@ a, p {
 }
 
 .container > main {
-	grid-column: 1/10;
+	grid-column: 1/11;
 	padding: 150px 0;	
 	background-color: #f1f1f191;
 }
@@ -103,7 +103,7 @@ a, p {
 }
 
 .container > aside {
-	grid-column: 10/13;
+	grid-column: 11/13;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -162,7 +162,7 @@ a, p {
 }
 
 .articles article {
-	margin: 40px;
+	margin-top: 40px;
 	box-shadow: 2px 1px 20px 0px #d5d5d5;
 	background-color: white;
 }
@@ -194,7 +194,7 @@ a, p {
 }
 
 .aside-video iframe {
-	height: 250px;
+	height: 150px;
 }
 
 .aside-google-search .button {
