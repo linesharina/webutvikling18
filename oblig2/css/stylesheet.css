@@ -96,7 +96,7 @@ a, p {
 
 .container > main {
 	grid-column: 1/11;
-	padding: 150px 0;	
+	padding: 100px 0;	
 	background-color: #f1f1f191;
 }
 
