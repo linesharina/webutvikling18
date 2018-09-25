@@ -51,7 +51,7 @@ a, p {
 
 @media (max-width: 782px) {
 	.container {
-		grid-template-rows: 400px 100px auto;
+		grid-template-rows: 400px 100px auto auto 150px;
 	}
 }
 
