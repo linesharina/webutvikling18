@@ -76,6 +76,9 @@ a, p {
 	justify-content: center;
 	border-bottom: 1px solid #d5d5d5;
 	box-shadow: 1px 4px 12px 0px #0000003d;
+	position: sticky;
+	top: 0;
+	background-color: white; 
 }
 
 .container > nav a {
