@@ -75,7 +75,7 @@ a, p {
 	display: flex;
 	justify-content: center;
 	border-bottom: 1px solid #d5d5d5;
-	box-shadow: 1px 4px 12px 0px #0000003d;
+	box-shadow: 1px 4px 12px 0px rgba(0,0,3,0.05);
 	position: sticky;
 	top: 0;
 	background-color: white; 
@@ -97,7 +97,7 @@ a, p {
 .container > main {
 	grid-column: 1/11;
 	padding: 100px 0;	
-	background-color: #f1f1f191;
+	background-color: rgba(241,241,241,0.57);
 }
 
 .container > main > header {
@@ -111,7 +111,7 @@ a, p {
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: start;
-	box-shadow: 1px 4px 12px 0px #0000003d;
+	box-shadow: 1px 4px 12px 0px rgba(0, 0, 3, 0.21);
 }
 
 .container > aside > div {
@@ -179,7 +179,7 @@ a, p {
 }
 
 .article-read-more {
-	border-top: 1px solid #00000030;
+	border-top: 1px solid rgba(0,0,0,0.19);
 	padding: 30px 0;
 }
 
