@@ -178,6 +178,9 @@ a, p {
 
 /*add flex*/
 .articles article {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	margin-top: 40px;
 	box-shadow: 2px 1px 20px 0px #d5d5d5;
 	background-color: white;
