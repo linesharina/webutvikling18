@@ -12,11 +12,27 @@ body {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: auto 150px;
+	margin: 0;
+}
+
+img {
+	vertical-align: middle;
+}
+
+h1, h2, h3 {
+	font-family: 'Arvo', serif;
 }
 
 h1 {
-	font-family: 'Arvo', serif;
 	font-size: 4em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1em;
 }
 
 p, a {
@@ -31,12 +47,12 @@ a {
 
 body > main {
 	grid-column: 1/13;
-	margin: 30px;
+	padding: 60px 60px 60px 30px;
 }
 
 @media (max-width: 782px) {
 	body > main {
-		margin: 0;
+		padding: 0;
 	}
 }
 
@@ -48,6 +64,19 @@ body > footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+body > footer a {
+	color: white;
+}
+
+body > footer p {
+	margin: 0;
+}
+
+body > footer a:hover,
+body > footer a:focus {
+	text-decoration: underline;
 }
 
 .article {
@@ -105,12 +134,18 @@ body > footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding-right: 30px;
 }
 
 .article-nav a {
 	padding: 30px;
 	font-size: 1.2em;
 	font-weight: 700;
+}
+
+.article-nav a:hover,
+.article-nav a:focus{
+	text-decoration: underline;
 }
 
 @media (max-width: 782px) {
