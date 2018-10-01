@@ -46,7 +46,7 @@ a, p {
 .container {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 400px 100px 1000px 200px;
+	grid-template-rows: 400px 100px auto 200px;
 }
 
 @media (max-width: 782px) {
