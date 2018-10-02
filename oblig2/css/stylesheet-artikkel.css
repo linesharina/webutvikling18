@@ -36,7 +36,7 @@ h3 {
 	font-size: 1em;
 }
 
-p, a {
+p, a, li {
 	font-family: 'Lato', sans-serif;
 	font-size: 1.2em;
 }
@@ -44,6 +44,11 @@ p, a {
 a {
 	text-decoration: none;
 	color: black;
+}
+
+pre {
+	background-color: #f7f7f7;
+	padding: 10px 0;
 }
 
 body > main {
@@ -103,7 +108,9 @@ body > footer a:focus {
 	}
 }
 
-.article-left p {
+.article-left p,
+.article-left li,
+.article-left pre {
 	width: 75%;
 }
 
@@ -116,6 +123,17 @@ body > footer a:focus {
 .article-left-txt {
 	padding: 30px;
 }
+
+.article-left-txt a {
+	font-size: 1em;
+	text-decoration: underline;
+	line-height: 1.5em;
+}
+
+.article-left-txt a:hover, 
+.article-left-txt a:focus {
+	font-weight: 700;
+} 
 
 .article-right {
 	overflow: hidden;
@@ -195,3 +213,10 @@ body > footer a:focus {
 	}
 }
 
+#article-left-wireframe img {
+	max-width: 1800px;
+}
+
+#article-left-wireframe h3 {
+	padding: 30px;
+}
