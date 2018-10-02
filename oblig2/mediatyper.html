@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+	<title>Webutvikling 2018</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
+	<link rel="stylesheet" href="css/stylesheet-artikkel.css"/>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<article class="article">
+			<section class="article-left">
+				<header>
+					<nav class="article-nav">
+						<div class="article-nav-left">
+							<a href="index.html">Hjem</a>
+						</div>
+						<div class="article-nav-right">
+							<a href="skisser.html">Skisser</a>
+							<a href="git.html">Git/Github</a>
+							<a href="#mediatyper">Media typer</a>
+							<a href="css-layouts.html">CSS Layouts</a>
+						</div>
+					</nav>
+				</header>
+				<div class="article-left-txt">
+					<h1 id="mediatyper">Media typer</h1>
+					<h2>Dato: <time datetime="2018-10-01">02.10.2018</time></h2>
+					<h3>Hva er en media type?</h3>
+					<p>Media typer lar deg spesifisere CSS for forskjellige enheter og media typer. Det finnes flere forskjellige  mediatyper som er definert i CSS, som for eksempel all, print, projection, speech, braille, tty og tv. Jeg har imidlertid valgt å kun skrive litt om all, screen og print. 
+					Dette fordi de resterende medietypene er på vei ut, siden de nå blir dekket av regler for tilgjengelighet og responsivt design.</p>
+					<p>Kort forklaring:</p>
+					<ul>
+						<li>All: Tilsvarer å ikke definere en mediatype i det hele tatt, siden den vil gjelde uansett.</li>
+						<li>Screen: CSS-spesifikasjon for alle enheter som har en skjerm</li>
+						<li>Print: Brukes for å tilpasse utseende til en utskrift.</li>
+					</ul>
+					<h3>Hvordan bruker man disse?</h3>				
+					<p>Det finnes tre forskjellige måter å bruke mediatyper på. Første metoden er å linke til en ekstern CSS-fil:</p>
+					<pre>&lt;link rel="stylesheet" type="text/css" media="print" href="print-stilark.css/"&gt;</pre>
+					
+					<p>Man kan også bruke mediatyper i en eksisterende CSS-fil (inline), ved å lage egne @media-blokker:</p>
+					<!-- Beklager følgende grusomme indentering: -->
+					<pre>
+@media print {
+	p {
+		color: black;
+	}
+}
+					</pre>
+					<p>Man kan også importere stilark i CSS:</p>
+					<pre>@import url('print-css') print</pre>
+
+					<h3>Fordeler og ulemper</h3>				
+					<p>Fordelen med mediatyper er at man kan tilpasse design etter hvilken enhet som brukes. 
+					Ulempen er at man får mer, og ikke minst mer kompleks, CSS-kode.</p>
+				</div>
+			</section>
+			<section class="article-right">
+				<img src="img/mediatypes.jpg" alt="PC-skjermer">
+			</section>
+		</article>
+	</main>
+	<footer>
+		<a href="mailto:linesaa@hiof.no">linesaa@hiof.no</a>
+		<p>&copy; <time datetime="2018">2018</time> - Line Sharina Hagen</p>
+	</footer>
+</body>
+</html>
