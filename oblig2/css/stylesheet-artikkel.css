@@ -114,6 +114,7 @@ body > footer a:focus {
 	width: 75%;
 }
 
+
 @media (max-width: 782px) {
 	.article-left p,
 	.article-left li,
@@ -121,9 +122,10 @@ body > footer a:focus {
 		width: 100%;
 	}
 	
-	.article-left pre{
-		overflow: auto;
-	}
+}
+
+.article-left pre {
+	overflow: auto;
 }
 
 .article-left-txt {
