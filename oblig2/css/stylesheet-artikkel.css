@@ -213,10 +213,12 @@ body > footer a:focus {
 	}
 }
 
-#article-left-wireframe img {
-	max-width: 1800px;
+#article-wireframe img {
+	width: 100%;
+	max-width: 1920px;
 }
 
-#article-left-wireframe h3 {
-	padding: 30px;
+#article-wireframe h3 {
+	padding: 30px 0;
+	font-size: 1.2em;
 }
