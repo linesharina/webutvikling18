@@ -1,0 +1,26 @@
+body > footer {
+	display: none;
+}
+
+.article {
+	display: flex;
+	flex-direction: column;
+}
+.article-left,
+.article-right {
+	width: 100%;
+}
+
+.article-left p,
+.article-left li,
+.article-left pre {
+	width: 100%;
+}
+
+.article-right img {
+	height: auto;
+}
+
+.article-nav {
+	display: none;
+}
