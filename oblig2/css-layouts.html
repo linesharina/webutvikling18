@@ -5,6 +5,7 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
 	<link rel="stylesheet" href="css/stylesheet-artikkel.css"/>
+	<link rel="stylesheet" media="print" href="css/print.css"/>
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -32,7 +33,8 @@
 					
 					<h3>Table</h3>
 					<p>Før i tiden kunne man finne på å sette opp hele layouten til en nettside ved hjelp av et table. 
-					Da puttet man elementer inn i radene og kolonnene til tabellen, for så å style slik man ønsket.</p>
+					Da puttet man elementer inn i radene og kolonnene til tabellen, for så å style slik man ønsket.
+					Dette er heldigvis ikke noe man gjør i dag.</p>
 					
 					<h3>CSS Float</h3>
 					<p>Floating er en egen posisjoneringsteknikk i CSS. 
@@ -42,13 +44,16 @@
 					<h3>CSS Flexbox</h3>
 					<p>Flexbox er en nyere, endimosjonal, posisjoneringsteknikk i CSS. 
 					Hovedideen bak flex er å gi en container mulighet til å endre dens bredde, høyde og rekkefølge. 
-					Dette for å best fylle ledig plass. Dette gjør at den også håndterer skalering av nettsiden til ulike skjermstørrelser og medietyper. 
-					En flexbeholder utvider elementer for å fylle ledig plass, eller krymper for å forhindre overflow.</p>
+					Dette for å best fylle ledig plass. Dette gjør at den også håndterer skalering av nettsiden til ulike skjermstørrelser og medietyper. En flexbeholder utvider elementer for å fylle ledig plass, eller krymper for å forhindre overflow.</p>
 
 					<h3>CSS Grid</h3>				
 					<p>Grid er den nyeste, todimosjonale, posisjoneringsteknikken i CSS. 
 					Siden den er todimosjonal, håndterer den både kolonner og rader. For å bruke Grid skriver man CSS-kode både for et forelder-element, 
 					som blir containeren, og til dette elementets barn. Disse barna blir da Grid Items. Man vil altså definere grid-områder i rader og kolonner før man skriver videre kode.</p>
+
+					<h3>Optimal løsning</h3>
+					<p>Det mest optimale i dag, når det kommer til layouten på en nettside, vil være å bruke både Flexbox og Grid.
+					Grid er mest fleksibel, mens Flexbox er den med størst vekst og har noe bedre støtte.</p>
 
 					<h3>Lenker til eksterne ressurser</h3>
 					<ul>
@@ -65,10 +70,11 @@
 							<a target="_blank" href="https://css-tricks.com/snippets/css/complete-guide-grid/">Mer om Grid</a>
 						</li>
 					</ul>
+					<img src="img/css-layouts.jpg" alt="CSS Layouts">
 				</section>
 			</div>
 			<section class="article-right">
-				<img src="img/css-layouts.jpg" alt="CSS Layouts">
+				<img src="img/grid.jpg" alt="Layout">
 			</section>
 		</article>
 	</main>
