@@ -1,4 +1,31 @@
+body {
+	background-color: #fff;
+}
+
 body > footer {
+	display: none;
+}
+
+p, a, li {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.2em;
+}
+
+a:after{
+    content:" (" attr(href) ") ";
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+img, pre {
+	page-break-inside: avoid;
+}
+
+img {
+	height: auto;
+}
+
+.article-nav {
 	display: none;
 }
 
@@ -6,6 +33,7 @@ body > footer {
 	display: flex;
 	flex-direction: column;
 }
+
 .article-left,
 .article-right {
 	width: 100%;
@@ -17,10 +45,4 @@ body > footer {
 	width: 100%;
 }
 
-.article-right img {
-	height: auto;
-}
 
-.article-nav {
-	display: none;
-}
