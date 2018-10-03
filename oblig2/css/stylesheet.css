@@ -126,7 +126,7 @@ a, p {
 	box-shadow: 1px 4px 12px 0px rgba(0, 0, 3, 0.21);
 }
 
-.container > aside > div {
+.container > aside > section {
 	width: 100%;
 	padding: 0 20px;
 }
