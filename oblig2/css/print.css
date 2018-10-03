@@ -22,8 +22,9 @@ img, pre {
 }
 
 img {
+	display: block;
 	width: auto;
-	max-width: 95%;
+	max-width: 100%;
 }
 
 .article-nav {
@@ -47,9 +48,10 @@ img {
 }
 
 .article-right img {
+	display: block;
 	height: auto;
 	width: auto;
-	max-width: 80%;
+	max-width: 85%;
 	overflow: none;
 	page-break-inside: avoid;
 }
