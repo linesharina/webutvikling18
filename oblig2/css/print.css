@@ -52,6 +52,6 @@ img {
 	height: auto;
 	width: auto;
 	max-width: 85%;
-	overflow: auto;
+	overflow: visible;
 	page-break-inside: avoid;
 }
