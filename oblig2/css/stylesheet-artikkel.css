@@ -85,6 +85,7 @@ body > footer a:focus {
 	text-decoration: underline;
 }
 
+/* Artikkel */
 .article {
 	display: flex;
 	flex-direction: row;
@@ -155,6 +156,8 @@ body > footer a:focus {
 	}
 }
 
+/* Artikkel meny */
+
 .article-nav {
 	display: flex;
 	flex-direction: row;
@@ -218,6 +221,8 @@ body > footer a:focus {
 		padding: 30px;
 	}
 }
+
+/* IDs */
 
 #article-wireframe img {
 	width: 100%;
