@@ -52,6 +52,7 @@ pre {
 }
 
 body > main {
+	width: 100%;
 	grid-column: 1/13;
 	padding: 60px 60px 60px 30px;
 }
