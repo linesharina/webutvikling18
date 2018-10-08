@@ -92,7 +92,6 @@ a, p {
 .container > nav a:hover,
 .container > nav a:focus {
 	text-decoration: underline;
-	color: #ffd90b;
 }
 
 @media (max-width: 782px) {
@@ -143,6 +142,10 @@ a, p {
 
 .container > footer a {
 	color: white;
+}
+
+.container > footer a:hover {
+	font-weight: 700;
 }
 
 @media (max-width: 782px) {
