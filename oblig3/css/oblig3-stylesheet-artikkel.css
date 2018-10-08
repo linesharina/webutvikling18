@@ -14,6 +14,8 @@ body {
 
 h1 {
 	font-family: 'Handlee', cursive;
+	font-size: 3em;
+	font-weight: 700;
 	margin: 0;
 }
 
@@ -68,6 +70,7 @@ a, p {
 .container > header h2 {
 	font-weight: 300;
 	margin: 0;
+	font-size: 2em;
 }
  
 .container > nav {
@@ -92,7 +95,6 @@ a, p {
 .container > nav a:hover,
 .container > nav a:focus {
 	text-decoration: underline;
-	color: #ffd90b;
 }
 
 @media (max-width: 782px) {
@@ -129,6 +131,10 @@ a, p {
 
 .container > footer a {
 	color: white;
+}
+
+.container > footer a:hover {
+	font-weight: 700;
 }
 
 @media (max-width: 782px) {
@@ -176,8 +182,10 @@ a, p {
 	padding: 100px 0;
 }
 
-.article-read-more a:hover,
-.article-read-more a:focus,
+.article-content h2 {
+	margin: 0;
+}
+
 .aside-articles a:hover,
 .aside-articles a:focus {
 	font-weight: 700;
