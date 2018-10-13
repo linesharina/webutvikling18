@@ -16,11 +16,20 @@
 			<h2>Line Sharina Aamodt</h2>
 		</header>
 		<nav>
-			<a href="skisser.html">Skisser</a>
-			<a href="git.html">Git/Github</a>
-			<a href="mediatyper.html">Media typer</a>
-			<a href="css-layouts.html">CSS Layouts</a>
-			<a href="#">Oblig 2</a>
+			<a href="#">Responsivt design</a>
+			<a href="#">Universell utforming</a>
+			<a href="#">WAMP</a>
+			<ul>
+				<li>
+					<a href="#">Oblig 2</a>
+					<ul>
+						<li><a href="skisser.html">Skisser</a></li>
+						<li><a href="git.html">Git/Github</a></li>
+						<li><a href="mediatyper.html">Media typer</a></li>
+						<li><a href="css-layouts.html">CSS Layouts</a></li>
+					</ul>
+				</li>
+			</ul>
 		</nav>
 		<main>
 			<header>
@@ -84,5 +93,14 @@
 			<p>&copy; <time datetime="2018">2018</time> - Line Sharina Hagen</p>
 		</footer>
 	</div>
+<script>
+	(function(){
+		function toggleNav() {
+		    document.getElementById('js-nav').classList.toggle("show");
+		}
+
+		document.getElementById("js-nav-btn").addEventListener("click", toggleNav); 
+	})();
+</script>
 </body>
 </html>
