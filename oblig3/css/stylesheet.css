@@ -30,6 +30,7 @@ a, p {
 	font-family: 'Lato', sans-serif;
 }
 
+/* Styler alle knapper */
 .button {
 	display: inline-block;
 	background-color: #ffe25b;
@@ -43,18 +44,14 @@ a, p {
 	font-weight: 700;
 }
 
+/*Wrapper main*/
 .container {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: 400px 100px auto 200px;
 }
 
-@media (max-width: 782px) {
-	.container {
-		grid-template-rows: 400px 100px auto auto 150px;
-	}
-}
-
+/* Header */
 .container > header {
 	padding-top: 130px;
 	grid-column: 1/13;
@@ -69,7 +66,8 @@ a, p {
 	font-weight: 300;
 	margin: 0;
 }
- 
+
+/* Meny */
 .container > nav {
 	grid-column: 1/13;
 	display: flex;
@@ -82,11 +80,17 @@ a, p {
 	background-color: white; 
 }
 
-.container > nav a {
+.container > nav > a,
+.container > nav > ul {
 	text-decoration: none;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin: 30px;
+}
+
+.container > nav a {
+	text-decoration: none;
+	white-space: nowrap;
 }
 
 .container > nav a:hover,
@@ -94,17 +98,32 @@ a, p {
 	text-decoration: underline;
 }
 
-@media (max-width: 782px) {
-	.container > nav {
-		justify-content: space-around;
-	}
-
-	.container > nav a {
-		margin: 0;
-	}
+.container > nav ul {
+	list-style-type: none;
+	position: relative;
+	padding: 0;
 }
 
+/* Dropdown i meny */
+.container > nav > ul > li > ul {
+	display: none;
+	position: absolute;
+	padding-left: 0;
+	background-color: white;
+	top: 100%;
+	box-shadow: 1px 4px 12px 0px rgba(0, 0, 3, 0.21);
+}
 
+.container > nav > ul > li > ul > li a {
+	display: block;
+	padding: 15px 30px;
+}
+
+.container > nav > ul > li:hover > ul {
+	display: block;
+}
+
+/* Hoveddelen */
 .container > main {
 	grid-column: 1/11;
 	padding: 100px 0;	
@@ -116,6 +135,7 @@ a, p {
 	justify-content: center;
 }
 
+/*Sidebaren */
 .container > aside {
 	grid-column: 11/13;
 	display: flex;
@@ -130,6 +150,7 @@ a, p {
 	padding: 0 20px;
 }
 
+/* Footer */
 .container > footer {
 	grid-column: 1/13;
 	display: flex;
@@ -148,29 +169,11 @@ a, p {
 	font-weight: 700;
 }
 
-@media (max-width: 782px) {
-	.container main,
-	.container aside,
-	.container footer {
-		grid-column: 1/13;
-	}
-
-	.container aside {
-		padding: 70px 0;
-	}
-}
-
+/* Artikkel seksjonen */
 .articles {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-}
-
-@media (max-width: 782px) {
-	.articles {
-		flex-direction: column;
-		align-items: center;
-	}
 }
 
 .articles article,
@@ -179,7 +182,7 @@ a, p {
 	max-width: 300px;
 }
 
-/*add flex*/
+/* Artikkel boks */
 .articles article {
 	display: flex;
 	flex-direction: column;
@@ -227,4 +230,85 @@ a, p {
 
 .aside-articles a {
 	line-height: 2;
+}
+
+
+@media (max-width: 1180px) {
+	.container {
+		grid-template-rows: 400px 100px auto auto 150px;
+	}
+
+
+	.container > main,
+	.container > footer {
+		grid-column: 1/13;
+	}
+
+	.container aside {
+		grid-column: 4/11;
+		padding: 70px 0;
+		box-shadow: 0 0 0 0;
+	}
+
+	.aside-video iframe {
+		height: 350px;
+	}
+}
+
+@media (max-width: 940px) {
+
+	.container {
+		grid-template-rows: 400px auto auto auto 150px;
+	}
+
+	.container > nav {
+		display: none;
+	}
+
+	.articles {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.articles article,
+	.articles img {
+		width: 100%;
+		max-width: 700px;
+	}
+
+}
+
+/* Mobil-styling */
+@media (max-width: 782px) {
+	.container > nav {
+		justify-content: space-around;
+	}
+
+	.container > nav a {
+		margin: 0;
+	}
+
+	.container main,
+	.container aside,
+	.container footer {
+		grid-column: 1/13;
+	}
+
+	.container aside {
+		padding: 70px 0;
+	}
+	.articles {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.articles article,
+	.articles img {
+		width: 100%;
+		max-width: 300px;
+	}
+
+	.aside-video iframe {
+		height: 250px;
+	}
 }
