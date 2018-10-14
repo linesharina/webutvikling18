@@ -31,17 +31,32 @@ a, p {
 }
 
 /* Styler alle knapper */
+button,
 .button {
 	display: inline-block;
 	background-color: #ffe25b;
 	padding: 10px 20px;
 	text-decoration: none;
+	border: 0;
 }
 
 .button:hover,
 .button:focus {
 	text-decoration: underline;
 	font-weight: 700;
+}
+
+/* Knapp som hopper til hovedinnhold*/
+.jump-to-content {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    z-index: 1;
+    display: inline-block;
+}
+
+.jump-to-content:focus {
+    top: 0;
 }
 
 /*Wrapper main*/
@@ -78,6 +93,10 @@ a, p {
 	position: sticky;
 	top: 0;
 	background-color: white; 
+}
+
+.container > nav > button {
+	display: none;
 }
 
 .container > nav > a,
@@ -119,7 +138,8 @@ a, p {
 	padding: 15px 30px;
 }
 
-.container > nav > ul > li:hover > ul {
+.container > nav > ul > li:hover > ul,
+.container > nav > ul > li.show > ul {
 	display: block;
 }
 
@@ -174,6 +194,10 @@ a, p {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 90%;
+	margin: 0 auto;
 }
 
 .articles article,
@@ -238,7 +262,6 @@ a, p {
 		grid-template-rows: 400px 100px auto auto 150px;
 	}
 
-
 	.container > main,
 	.container > footer {
 		grid-column: 1/13;
@@ -256,13 +279,32 @@ a, p {
 }
 
 @media (max-width: 940px) {
-
 	.container {
-		grid-template-rows: 400px auto auto auto 150px;
+		grid-template-rows: 400px auto auto auto auto;
+	}
+
+	.container > header {
+		background-position: unset;
 	}
 
 	.container > nav {
+		flex-direction: column;
+	}
+
+	.container > nav > button {
+		display: block;
+		margin: 30px;
+	}
+
+	.container > nav > a,
+	.container > nav > ul {
 		display: none;
+		margin: 15px;
+	}
+
+	.container > nav.show > a,
+	.container > nav.show > ul {
+		display: block;
 	}
 
 	.articles {
@@ -282,10 +324,6 @@ a, p {
 @media (max-width: 782px) {
 	.container > nav {
 		justify-content: space-around;
-	}
-
-	.container > nav a {
-		margin: 0;
 	}
 
 	.container main,
