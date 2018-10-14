@@ -10,17 +10,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 </head>
 <body>
+	<a class="jump-to-content" href="#innhold">Hopp til innhold</a>
 	<div class="container">
 		<header>
 			<h1>Webutvikling</h1>
 			<h2>Line Sharina Aamodt</h2>
 		</header>
 		<nav>
+			<button id="nav-btn">Meny</button>
 			<a href="#">Responsivt design</a>
 			<a href="#">Universell utforming</a>
 			<a href="#">WAMP</a>
 			<ul>
-				<li>
+				<li class="dropdown">
 					<a href="#">Oblig 2</a>
 					<ul>
 						<li><a href="skisser.html">Skisser</a></li>
@@ -31,13 +33,43 @@
 				</li>
 			</ul>
 		</nav>
-		<main>
+		<main id="innhold">
 			<header>
 				<h2>Viktige artikler</h2>
 			</header>
 			<section class="articles">
 				<article>
-					<img src="img/github.png" alt="github">
+					<img src="img/enheter.jpg" alt="Foto: Forskjellige enheter">
+					<div class="article-content">
+						<h3>Responsivt design</h3>
+						<p>Egen løsning, utfordringer og problemer</p>
+						<div class="article-read-more">
+							<a href="css-layouts.html">Mer om responsivt design</a>
+						</div>
+					</div>
+				</article>
+				<article>
+					<img src="img/universell-utforming.jpg" alt="Illustrasjon: universell utforming ">
+					<div class="article-content">
+						<h3>Universell utforming</h3>
+						<p>Beskrivelse, utfordringer og problemer.</p>
+						<div class="article-read-more">
+							<a href="css-layouts.html">Mer om Universell utforming</a>
+						</div>
+					</div>
+				</article>
+				<article>
+					<img src="img/wamp-logo.jpg" alt="Foto: WAMP logo">
+					<div class="article-content">
+						<h3>WAMP</h3>
+						<p>Enkel brukermanual for hvordan man installerer WAMP</p>
+						<div class="article-read-more">
+							<a href="css-layouts.html">Mer om WAMP-installasjon</a>
+						</div>
+					</div>
+				</article>
+				<article>
+					<img src="img/github.png" alt="Foto: Github-maskot">
 					<div class="article-content">
 						<h3>Git/Github</h3>
 						<p>Beskrivelse av Git og Github, fordeler og mine tanker</p>
@@ -47,7 +79,7 @@
 					</div>
 				</article>
 				<article>
-					<img src="img/artikkel2.jpg" alt="devices">
+					<img src="img/artikkel2.jpg" alt="Foto: Forskjellige enheter">
 					<div class="article-content">
 						<h3>Media typer</h3>
 						<p>Hva er Media typer og hvordan man bruker disse?</p>
@@ -57,7 +89,7 @@
 					</div>
 				</article>
 				<article>
-					<img src="img/artikkel3.jpg" alt="layouts">
+					<img src="img/artikkel3.jpg" alt="Foto: Illustrasjon layouts">
 					<div class="article-content">
 						<h3>CSS Layouts</h3>
 						<p>Forskjellige metoder for layouts i CSS</p>
@@ -93,14 +125,38 @@
 			<p>&copy; <time datetime="2018">2018</time> - Line Sharina Hagen</p>
 		</footer>
 	</div>
-<script>
-	(function(){
-		function toggleNav() {
-		    document.getElementById('js-nav').classList.toggle("show");
-		}
+	<script>
+		(function(){
+			// Meny knapp
+			var btn = document.querySelector("#nav-btn")
+			var nav = document.querySelector('.container > nav')
 
-		document.getElementById("js-nav-btn").addEventListener("click", toggleNav); 
-	})();
-</script>
+			function toggleNav() {
+				nav.classList.toggle("show");
+			}
+
+			btn.addEventListener("click", toggleNav); 
+
+			// Få bredden til vinduet 
+			var width = window.innerWidth
+			|| document.documentElement.clientWidth
+			|| document.body.clientWidth;
+			
+			if (width <= 940) {
+				console.log('etellerannet')
+				// Dropdown meny
+				var dropdownTrigger = nav.querySelector('.dropdown')
+				var dropdownTriggerA = nav.querySelector('.dropdown > a')
+				
+				function toggleDropdown() {
+					dropdownTrigger.classList.toggle("show");
+				}
+
+				dropdownTrigger.addEventListener("click", toggleDropdown);
+				dropdownTriggerA.addEventListener("blur", toggleDropdown);
+			}
+
+		})();
+	</script>
 </body>
 </html>
