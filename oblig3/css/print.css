@@ -28,6 +28,19 @@ img {
 	max-width: 100%;
 }
 
+/* Print oblig 3*/
+.jump-to-content,
+.container > header,
+.container > nav,
+.container > footer {
+	display: none;
+}
+
+.articles article {
+	max-width: 100%;
+}
+
+/* Print oblig 2*/
 .article-nav {
 	display: none;
 }
