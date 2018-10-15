@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+	<title>Webutvikling 2018</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
+	<link rel="stylesheet" href="css/stylesheet.css" />
+	<link rel="stylesheet" href="css/oblig3-stylesheet-artikkel.css" />
+	<link rel="stylesheet" media="print" href="css/print.css"/>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+</head>
+<body>
+	<a class="jump-to-content" href="#innhold">Hopp til innhold</a>
+	<div class="container">
+		<header>
+			<h1>Webutvikling</h1>
+			<h2>Line Sharina Aamodt</h2>
+		</header>
+		<nav>
+			<button id="nav-btn">Meny</button>
+			<a href="index.html">Hjem</a>
+			<a href="#responsivt">Responsivt design</a>
+			<a href="#">Universell utforming</a>
+			<a href="#">WAMP</a>
+			<ul>
+				<li class="dropdown">
+					<a href="#">Oblig 2</a>
+					<ul>
+						<li><a href="skisser.html">Skisser</a></li>
+						<li><a href="git.html">Git/Github</a></li>
+						<li><a href="mediatyper.html">Media typer</a></li>
+						<li><a href="css-layouts.html">CSS Layouts</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main id="innhold" class="articles">
+			<article id="responsivt">
+				<img src="img/enheter.jpg" alt="Foto: Enheter i forskjellige størrelser">
+				<div class="article-content">
+					<h2>Responsivt design</h2>
+					<p>Responivt design går ut på at det man utvikler (f. eks. nettsider, applikasjoner) passer og fungerer like godt på mobil og nettbrett, som på en laptop/PC. Det er ikke kun forskjellige skjermstørrelser man må tenkte på, men også at siden skal fungere like godt for en som bruker treg mobildata som en som er tilkoblet fiber.</p>
+					
+					<h3>Media queries</h3>
+					<p>Man kan si at media queries er det som danner grunnlaget for responsivt design. Enkelt fortalt kan man bruke forskjellig CSS, som man baserer på spørringer til nettleseren. Med media queries kan man altså selv sette regler basert på f.eks. en skjermstørrelse. Eksempel på bruk:</p>
+					<pre>
+@media (max-width: 940px) {
+	.articles article {
+		max-width: 75%;
+	}
+}							
+					</pre>
+
+					<h3>Media typer</h3>
+					<p>Man kan si at media typer er forløperen til media queries, i forhold til responsivt design. Før media queries kom på banen, var det vanlig å lage egne stilark for de forskjellige enhetene. Det har tidligere blitt postet en artikkel om mediatyper på denne siden.</p>
+					<a href="mediatyper.html">Du kan lese mer om mediatyper her.</a>
+					
+					<h3>Fleksible størrelser</h3>
+					<p>For å designe en nettside som er fleksibel med tanke på størrelsen, har man
+					flere forskjellige metoder for å oppnå akkurat dette. Både Flexbox og Grid gjør det å lage responsive nettsider i dag super enkelt! Det har blitt skrevet om både flexbox og grid her tidligere.</p>
+					<a href="css-layouts.html">Du kan lese mer om både flexbox og grid her.</a>
+					
+					<h3>Responsivitet på denne siden</h3>
+					<p>Det største problemet og utfordringen, når det kommer til løsningen på denne siden,
+					var at man skulle bygge på den forrige obligen. Da ble ikke mulig å gjøre "mobile-first", som er den måten vi har blitt anbefalt og utvikle responsive nettsider.
+					Mobile-first går ut på at man først designer nettsiden for mobil, for så å gradvis style for større og større enheter. På denne nettsiden måtte jeg gjøre det omvendt. Jeg hadde en ferdig løsning for desktop, gjorde skjermen mindre helt til designet "kræsjet" for så å style til noe mer passende.</p>
+					<p>For responsivitet på denne nettsiden har jeg i hovedsak brukt media queries, flexbox og grid.</p>
+
+					<h3>Vil du lære mer?</h3>
+					<p>Her har flere eksterne artikler om responsivt design:</p>
+					<ul>
+						<li><a target="_blank" href="https://www.w3schools.com/html/html_responsive.asp">HTML Responsive Web Design</a></li>
+						<li><a target="_blank" href="https://www.creativebloq.com/how-to/create-a-responsive-layout-with-css-grid">Create a responsive layout with CSS Grid</a></li>
+						<li><a target="_blank" href="https://bonefish.no/blogg/89-9-tips-for-responsivt-design">9 tips for responsivt design</a></li>
+					</ul>
+				</div>
+			</article>
+		</main>
+		<footer>
+			<a href="mailto:linesaa@hiof.no">linesaa@hiof.no</a>
+			<p>&copy; <time datetime="2018">2018</time> - Line Sharina Hagen</p>
+		</footer>
+	</div>
+	<script>
+		(function(){
+			// Meny knapp
+			var btn = document.querySelector("#nav-btn")
+			var nav = document.querySelector(".container > nav")
+
+			function toggleNav() {
+				nav.classList.toggle("show");
+			}
+
+			btn.addEventListener("click", toggleNav); 
+			
+			// Dropdown meny
+			var dropdownTrigger = nav.querySelector(".dropdown")
+			var dropdownTriggerA = nav.querySelector(".dropdown > a")
+			
+			function toggleDropdown() {
+				dropdownTrigger.classList.toggle("show");
+			}
+
+			dropdownTrigger.addEventListener("click", toggleDropdown);
+			dropdownTriggerA.addEventListener("blur", toggleDropdown);
+
+		})();
+	</script>
+</body>
+</html>

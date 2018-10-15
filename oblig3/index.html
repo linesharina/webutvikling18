@@ -18,7 +18,7 @@
 		</header>
 		<nav>
 			<button id="nav-btn">Meny</button>
-			<a href="#">Responsivt design</a>
+			<a href="responsivt-design.html">Responsivt design</a>
 			<a href="#">Universell utforming</a>
 			<a href="#">WAMP</a>
 			<ul>
@@ -44,7 +44,7 @@
 						<h3>Responsivt design</h3>
 						<p>Egen løsning, utfordringer og problemer</p>
 						<div class="article-read-more">
-							<a href="css-layouts.html">Mer om responsivt design</a>
+							<a href="responsivt-design.html">Mer om responsivt design</a>
 						</div>
 					</div>
 				</article>
@@ -137,24 +137,21 @@
 
 			btn.addEventListener("click", toggleNav); 
 
-			// Få bredden til vinduet 
-			var width = window.innerWidth
-			|| document.documentElement.clientWidth
-			|| document.body.clientWidth;
 			
-			if (width <= 940) {
-				console.log('etellerannet')
-				// Dropdown meny
-				var dropdownTrigger = nav.querySelector('.dropdown')
-				var dropdownTriggerA = nav.querySelector('.dropdown > a')
-				
-				function toggleDropdown() {
-					dropdownTrigger.classList.toggle("show");
-				}
+			// Dropdown meny
+			var dropdownTrigger = nav.querySelector('.dropdown > button')
+			
+			function toggleDropdown(e) {
+				e.stopPropagation();
+				dropdownTrigger.classList.toggle("show");
 
-				dropdownTrigger.addEventListener("click", toggleDropdown);
-				dropdownTriggerA.addEventListener("blur", toggleDropdown);
+				window.addEventListener("click", function() {
+					dropdownTrigger.classList.remove("show");
+					this.removeEventListener('click', arguments.callee);
+				});
 			}
+
+			dropdownTrigger.addEventListener("click", toggleDropdown);
 
 		})();
 	</script>
