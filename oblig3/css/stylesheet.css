@@ -26,8 +26,9 @@ a {
 	color: black;
 }
 
-a, p {
+a, p, button {
 	font-family: 'Lato', sans-serif;
+	font-size: 1em; 
 }
 
 /* Styler alle knapper */
@@ -100,7 +101,8 @@ button,
 }
 
 .container > nav > a,
-.container > nav > ul {
+.container > nav > ul,
+.container > nav > ul button {
 	text-decoration: none;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -113,7 +115,8 @@ button,
 }
 
 .container > nav a:hover,
-.container > nav a:focus {
+.container > nav a:focus,
+.container > nav button:focus {
 	text-decoration: underline;
 }
 
@@ -121,6 +124,12 @@ button,
 	list-style-type: none;
 	position: relative;
 	padding: 0;
+}
+
+.container > nav > ul button {
+	background-color: white;
+	padding: 0;
+	margin: 0;
 }
 
 /* Dropdown i meny */
@@ -139,7 +148,7 @@ button,
 }
 
 .container > nav > ul > li:hover > ul,
-.container > nav > ul > li.show > ul {
+.container > nav > ul > li > button.show + ul {
 	display: block;
 }
 
@@ -185,7 +194,8 @@ button,
 	color: white;
 }
 
-.container > footer a:hover {
+.container > footer a:hover,
+.container > footer a:focus {
 	font-weight: 700;
 }
 
