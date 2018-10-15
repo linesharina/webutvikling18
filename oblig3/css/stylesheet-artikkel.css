@@ -57,12 +57,6 @@ body > main {
 	padding: 60px 60px 60px 30px;
 }
 
-@media (max-width: 782px) {
-	body > main {
-		padding: 0;
-	}
-}
-
 body > footer {
 	grid-column: 1/13;
 	background-color: #282727;
@@ -92,38 +86,15 @@ body > footer a:focus {
 	flex-direction: row;
 }
 
-@media (max-width: 782px) {
-	.article {
-		flex-direction: column;
-	}
-}
-
 .article-left,
 .article-right {
 	width: 50%;
-}
-
-@media (max-width: 782px) {
-	.article-left,
-	.article-right {
-		width: 100%;
-	}
 }
 
 .article-left p,
 .article-left li,
 .article-left pre {
 	width: 75%;
-}
-
-
-@media (max-width: 782px) {
-	.article-left p,
-	.article-left li,
-	.article-left pre{
-		width: 100%;
-	}
-	
 }
 
 .article-left pre {
@@ -153,12 +124,6 @@ body > footer a:focus {
 	height: 140vh;
 }
 
-@media (max-width: 782px) {
-	.article-right img {
-		height: 60vh;
-	}
-}
-
 /* Artikkel meny */
 
 .article-nav {
@@ -176,14 +141,6 @@ body > footer a:focus {
 .article-nav a:hover,
 .article-nav a:focus{
 	text-decoration: underline;
-}
-
-@media (max-width: 782px) {
-	.article-nav {
-		flex-direction: column;
-		background-color: #ffe25b;
-		box-shadow: 3px 2px 20px 0px #d5d5d5;
-	}
 }
 
 .article-nav-left,
@@ -211,7 +168,48 @@ body > footer a:focus {
 	margin: 0 15px;
 }
 
-@media (max-width: 782px) {
+/* IDs */
+
+#article-wireframe img {
+	width: 100%;
+	max-width: 1920px;
+}
+
+#article-wireframe h3 {
+	padding: 30px 0;
+	font-size: 1.2em;
+}
+
+@media (max-width: 1270px) {
+	body > main {
+		padding: 0;
+	}
+
+	.article {
+		flex-direction: column;
+	}
+
+	.article-left,
+	.article-right {
+		width: 100%;
+	}
+
+	.article-left p,
+	.article-left li,
+	.article-left pre{
+		width: 100%;
+	}
+
+	.article-right img {
+		height: 60vh;
+	}
+
+	.article-nav {
+		flex-direction: column;
+		background-color: #ffe25b;
+		box-shadow: 3px 2px 20px 0px #d5d5d5;
+	}
+
 	.article-nav-left,
 	.article-nav-right {
 		width: 100%;
@@ -223,16 +221,4 @@ body > footer a:focus {
 	.article-nav-right a {
 		padding: 30px;
 	}
-}
-
-/* IDs */
-
-#article-wireframe img {
-	width: 100%;
-	max-width: 1920px;
-}
-
-#article-wireframe h3 {
-	padding: 30px 0;
-	font-size: 1.2em;
 }
