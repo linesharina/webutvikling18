@@ -5,6 +5,10 @@ figcaption {
 	font-style: italic;
 }
 
+blockquote {
+	font-style: italic;
+}
+
 .container > main {
 	grid-column: 1/13;
 	padding: 50px 0;	
