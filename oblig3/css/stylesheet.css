@@ -26,7 +26,7 @@ a {
 	color: black;
 }
 
-a, p, button {
+a, p, li, button {
 	font-family: 'Lato', sans-serif;
 	font-size: 1em; 
 }
