@@ -58,30 +58,6 @@
 			<p>&copy; <time datetime="2018">2018</time> - Line Sharina Hagen</p>
 		</footer>
 	</div>
-	<script>
-		(function(){
-			// Meny knapp
-			var btn = document.querySelector("#nav-btn")
-			var nav = document.querySelector('.container > nav')
-
-			function toggleNav() {
-				nav.classList.toggle("show");
-			}
-
-			btn.addEventListener("click", toggleNav); 
-			
-			// Dropdown meny
-			var dropdownTrigger = nav.querySelector('.dropdown')
-			var dropdownTriggerA = nav.querySelector('.dropdown > a')
-			
-			function toggleDropdown() {
-				dropdownTrigger.classList.toggle("show");
-			}
-
-			dropdownTrigger.addEventListener("click", toggleDropdown);
-			dropdownTriggerA.addEventListener("blur", toggleDropdown);
-
-		})();
-	</script>
+	<script src="js/global.js" async></script>
 </body>
 </html>
