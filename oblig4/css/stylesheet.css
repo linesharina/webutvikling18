@@ -302,7 +302,7 @@ button,
 	}
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1145px) {
 	.container {
 		grid-template-rows: 400px auto auto auto auto;
 	}
@@ -314,7 +314,7 @@ button,
 	.container > nav {
 		flex-direction: column;
 	}
-
+	
 	.container > nav > button {
 		display: block;
 		margin: 30px;
@@ -330,6 +330,10 @@ button,
 	.container > nav.show > ul {
 		display: block;
 	}
+}
+
+@media (max-width: 940px) {
+
 
 	.articles {
 		flex-direction: column;
