@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+	<title>Wordpress - Webutvikling 2018</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
+	<link rel="stylesheet" href="css/stylesheet.css" />
+	<link rel="stylesheet" href="css/oblig3-stylesheet-artikkel.css" />
+	<link rel="stylesheet" media="print" href="css/print.css"/>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+</head>
+<body>
+	<a class="jump-to-content" href="#innhold">Hopp til innhold</a>
+	<div class="container">
+		<header>
+			<h1>Webutvikling</h1>
+			<h2>Line Sharina Aamodt</h2>
+		</header>
+		<nav>
+			<button id="nav-btn">Meny</button>
+			<a href="index.html">Hjem</a>
+			<a href="#wordpress">Wordpress</a>
+			<a href="cms-systemer.html">CMS-systemer</a>
+			<a href="responsivt-design.html">Responsivt design</a>
+			<a href="universell-utforming.html">Universell utforming</a>
+			<a href="mamp.html">MAMP</a>
+			<ul>
+				<li class="dropdown">
+					<button>Oblig 2</button>
+					<ul>
+						<li><a href="skisser.html">Skisser</a></li>
+						<li><a href="git.html">Git/Github</a></li>
+						<li><a href="mediatyper.html">Media typer</a></li>
+						<li><a href="css-layouts.html">CSS Layouts</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main id="innhold" class="articles">
+			<article id="wordpress">
+				<img src="img/wordpress.jpg" alt="Logo: Wordpress">
+				<div class="article-content">
+					<h2>Wordpress</h2>
+					<p>I denne artiklen skal vi gå igjennom hvordan man installerer Wordpress og deretter teste systemet.</p>
+
+					<h3>Wordpress installasjon</h3>
+					<em>Nb! Selv om oppgaven skriver "Sett opp din egen WordPress-site på MAMP/WAMP-installasjonen du satt opp i Oblig 3", har vi blitt fortalt i forelesning at vi kunne bruke f.eks. XAMPP. Jeg har valgt å gjøre dette i denne oppgaven. </em>
+
+					<h4>Nedlasting fra nettside</h4>
+					<p>Startet med å gå til følgende link:</p>
+					<a href="https://wordpress.org/">https://wordpress.org/</a>
+					<p>Trykket på "Get Wordpress" knappen øverst til høyre.</p>
+					<p>Trykket på knappen der det står "Download Wordpress 4.9.8"</p>
+					<img src="https://i.xdh.no/513a12c89444" alt="Download Wordpress 4.9.8-knapp">
+					<p>Kjørte filen som ble lastet ned.</p>
+
+					<h4>Utpakking av Wordpress-fil</h4>
+					<p>Pakket ut den zippet Wordpress-mappen på følgende filsti: "C:\xampp\htdocs". Jeg benyttet meg av 7-Zip for dette. </p>
+					<img src="https://i.xdh.no/33cf475e0e13" alt="Bilde: pakke ut mappe med 7-Zip">
+
+					<p>Da ble resultatet slikt:</p>
+					<img src="https://i.xdh.no/6855c563e13c" alt="Bilde av utpakket Wordpress mappe">
+
+					<h4>Oppretting av database</h4>
+					<p>Åpnet XAMPP og startet "Apache" og "MySQL"</p>
+					<img src="https://i.xdh.no/e7a8532f823e" alt="Bilde: Startet Apache og MySQL">
+
+					<p>Gikk til "/localhost/phpmyadmin/" i nettleseren.</p>
+					<p>Trykket på "New" helt til venstre for å opprette en ny database. Skrev inn ønsket databasenavn. Kalte den bare "wordpress". Valgte "utf8mb4_unicode_ci". Denne støtter flere tegn enn utf8 (f.eks. emojis!). Trykket "Opprett"</p>
+					<img src="https://i.xdh.no/b3634df4e66c" alt="Bilde: Oppretting av database i phpmyadmin">
+				
+					<h4>Wordpress konfigurasjon</h4>
+					<p>Gikk så til "/localhost/wordpress/wp-admin/". Blir så redirectet til konfigurasjonen. Her valgte jeg først språk, som jeg satte til "Norsk bokmål".</p>
+					<p>Trykket "Neste" og deretter "La oss fortsette!".</p>
+					<p>Fylte inn databasedetaljene. Brukte bare standard brukernavn og passord. Trykte "Send".</p>
+					<img src="https://i.xdh.no/d6ffebfbf186" alt="Bilde: Databasedetaljer i Wordpress">
+					<p>Trykte "Kjør installasjonen" og fylte inn informasjonen som trengtes i det siste vindu. Til slutt trykte jeg "Installer Wordpress".</p>
+					<p>Det ble en suksess, og jeg kunne nå logge inn.</p>
+					<img src="https://i.xdh.no/765e6cdee50b" alt="Bilde: Suksessfull installasjon">
+					<p>Dette var alle stegene jeg utførte for å installere Wordpress. </p>
+
+					<h3>Testing av CMS-systemet</h3>
+
+					<h4>Test av to andre temaer</h4>
+					<p>For å installere de to temaene holdt jeg over "Utseende" i meny i kontrollpanelet og trykket "Temaer". Neste steg var å trykk på "Legg til nytt"-knappen øverst på siden. </p>
+					<p>Fikk en oversikt over mange forskjellige temaer. Fant to jeg syns så pene ut og trykte "Installer". Jeg endte opp med å installere temaet "Screenr" og "Astrid".</p>
+					<p>Valgte først å teste ut temaet "Screenr", og trykket derfor "Aktiver" på denne.</p>
+					<img src="https://i.xdh.no/5c6e46c7e3f8" alt="Bilde: Aktivering av tema">
+
+					<h5>Screenr</h5>
+					<p>Slik så temaet ut som standard:</p>
+					<img src="https://i.xdh.no/6bc0dc56ed0a" alt="Bilde: Screenr tema">
+					<p>Trykte "Tilpass" på verktøylinjen øverst i vinduet for å endre designet. Endret dermed:</p>
+					<ul>
+						<li>Header bildet under "Toppbilde"</li>
+						<li>Gjorde forsiden statisk under "Forsideinnstillinger"</li>
+						<li>Slagordet under "Nettstedsidentitet"</li>
+						<li>Sidebaren. (Fjernet widgeter og la til et bilde). Under "Widgeter"->"Sidestolpe"</li>
+					</ul>
+					<p>Siden ble nå seendes slik ut:</p>
+					<img src="https://i.xdh.no/80749d80cfaa" alt="Bilde: Endringer av Screenr tema">
+
+					<h5>Astrid</h5>
+					<p>Aktiverte nå temaet "Astrid". Slik så temaet ut ved standard:</p>
+					<img src="https://i.xdh.no/720a36aadd72" alt="Bilde: Astrid tema">
+					<p>Endret så:</p>
+					<ul>
+						<li>Menyen til å være sentrert under "Header område" -> "Meny stil"</li>
+						<li>Header til å kun være menyen under "Header område" -> "Type header"</li>
+						<li>Fontstørrelser under "Fonter"</li>
+						<li>Bakgrunnsbilde under "Bakgrunnsbilde"</li>
+					</ul>
+					<img src="https://i.xdh.no/431e97598375" alt="Bilde: Astrid tema med endringer">
+
+					<h4>Plugins</h4>
+					<p>For å installere plugins holdt jeg over "Utvidelser" og trykte "Legg til ny" i menyen til kontrollpanelet i Wordpress. Da valgte jeg å installere to plugins som lå under "Anbefalte". Valgte å installere "Contact Form 7" og "MetaSlider". Gjorde dette ved å trykke på "Installer nå" på begge pluginsene, og deretter "Aktiver". </p>
+
+					<h5>Contact Form 7</h5>
+					<p>For å teste ut denne pluginen trykket jeg på det nye feltet i menyen som het "Kontakt". Her kunne jeg velge å lage et nytt kontaktskjema. Det gjorde jeg ved å trykke på "Legg til ny" ved siden av tittelen.</p>
+					<p>Lagde så et kontaktskjema med tittelen "Kontaktskjema" og med feltene "Navn", "E-post", "Emne", "Melding" og til slutt en "Send"-knapp.</p> 
+					<p>Man kan enkelt legge til felter og knapper ved å trykke på knapper i verktøylinjen. Da vil man få valget om feltet er påkrevd, hva navnet skal være og eventuelt standard verdi. Deretter blir det man trenger generert. For å legge til trykker man "Sett inn tag". Trykket "Lagre" når jeg hadde lagt til de feltene jeg ønsket.</p>
+					<img src="https://i.xdh.no/2441669d1503" alt="Bilde: Nytt kontaktskjema">
+					<p>Dette kontaktskjema implimenterer jeg på nettsiden senere, under avsnittet om Widgeter.</p>
+
+					<h5>MetaSlider</h5>
+					<p>Trykte på det nye feltet "MetaSlider" i menyen. Deretter "New". Her kunne jeg legge til bilder som skulle være med i slideren ved å trykke på "Legg til lysbilde". Her kunne jeg "drag and droppe" de bildene jeg ønsket. Valgte så en fast bredde og høyde som bildene skulle ha. Trykket på "Lagre".</p>
+					<img src="https://i.xdh.no/256d716ff223" alt="Bilde: Oppretting av slider">
+					<p>Slideren blir implimentert på nettsiden i avsnittet om Widgeter.</p>
+
+					<h4>Widgeter</h4>
+					<p>For å legge til en widget, holdt jeg over "Utseende" og trykte på "Widgeter". Her får man oversikt over alle tilgjengelige widgeter.</p>
+					<p>For å legge til kontaktskjema jeg lagde ovenfor, trykte jeg på widgeten som heter "Tekst" og valgte hvor på siden jeg ville ha den. La den til i footeren ved å velge "Footer 1". Kopierer så kortkoden til kontaktskjema, som man får oppgitt under pluginen. Ga den tittelen 
+					"Kontaktskjema" og trykket på "Lagre".</p>
+					<img src="https://i.xdh.no/312528b97420" alt="Bilde: Legge til widget">
+					<p>Gjorde tilsvarende prosess for å legge til slideren. Nå vises både kontaktskjema og slideren i sidens footer.</p>
+					<img src="https://i.xdh.no/d13f9784d8e3" alt="Bilde: Nettsiderens footer">
+
+					<h4>Opprette artikler</h4>
+					<p>Lagde to artikler på følgende måte:</p>
+					<ol>
+						<li>Gikk til Wordpress sitt kontrollpanel</li>
+						<li>Trykket "Innlegg" og "Legg til nytt"</li>
+						<li>Skrev inn en tittel</li>
+						<li>La til Lorum Ipsum tekst</li>
+						<li>La til fremhevet bilde ved å trykke på "Bestem fremhevet bilde"</li>
+						<li>Valgte et bilde fra mediebiblioteket</li>
+						<li>Trykket på "Publiser"</li>
+					</ol>
+					<p>Har nå 2 nye innlegg på nettsiden.</p>
+					<img src="https://i.xdh.no/d5c5c154c24f" alt="Bilde: 2 nye innlegg">
+
+					<h4>Opprette sider</h4>
+					<ol>
+						<li>Gikk til Wordpress sitt kontrollpanel</li>
+						<li>Holdt over "Sider" i menyer og trykket på "Legg til ny"</li>
+						<li>Skrev inn en tittel</li>
+						<li>La til Lorum Ipsum tekst</li>
+						<li>La til fremhevet bilde ved å trykke på "Bestem fremhevet bilde"</li>
+						<li>Valgte et bilde fra mediebiblioteket</li>
+						<li>Trykket på "Publiser"</li>
+					</ol>
+					<p>Har nå 2 nye sider.</p>
+					<img src="https://i.xdh.no/d8c9e14099b8" alt="Bilde: 2 nye sider">
+
+					<h4>Statisk forside</h4>
+					<p>For å sette en statisk forside, gjorde jeg følgende:</p>
+					<ol>
+						<li>Holdt over "Utseende" i menyen og trykket "Tilpass"</li>
+						<li>Trykket på "Forsideinnstillinger"</li>
+						<li>Valgte "En statisk side" under "Forsiden din viser"</li>
+						<li>Valgte siden jeg ønsket</li>
+						<li>Trykket "Publiser"</li>
+					</ol>
+					<img src="https://i.xdh.no/d359b64bfc68" alt="Bilde: Statisk forside">
+				</div>
+			</article>
+		</main>
+		<footer>
+			<a href="mailto:linesaa@hiof.no">linesaa@hiof.no</a>
+			<p>&copy; <time datetime="2018">2018</time> - Line Sharina Hagen</p>
+		</footer>
+	</div>
+	<script src="js/global.js" async></script>
+</body>
+</html>
