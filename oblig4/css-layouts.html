@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+	<title>Webutvikling 2018</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
+	<link rel="stylesheet" href="css/stylesheet.css" />
+	<link rel="stylesheet" href="css/oblig3-stylesheet-artikkel.css" />
+	<link rel="stylesheet" media="print" href="css/print.css"/>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+</head>
+<body>
+	<a class="jump-to-content" href="#innhold">Hopp til innhold</a>
+	<div class="container">
+		<header>
+			<h1>Webutvikling</h1>
+			<h2>Line Sharina Aamodt</h2>
+		</header>
+		<nav>
+			<button id="nav-btn">Meny</button>
+			<a href="index.html">Hjem</a>
+			<a href="responsivt-design.html">Responsivt design</a>
+			<a href="universell-utforming.html">Universell utforming</a>
+			<a href="mamp.html">MAMP</a>
+			<ul>
+				<li class="dropdown">
+					<button>Oblig 2</button>
+					<ul>
+						<li><a href="skisser.html">Skisser</a></li>
+						<li><a href="git.html">Git/Github</a></li>
+						<li><a href="mediatyper.html">Media typer</a></li>
+						<li><a href="#css-layouts">CSS Layouts</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main id="innhold" class="articles">
+			<article id="css-layouts">
+				<img src="img/grid.jpg" alt="Illustrasjon: Grid">
+				<div class="article-content">
+					<h2>CSS Layouts</h2>
+					<h3>Table</h3>
+					<p>Før i tiden kunne man finne på å sette opp hele layouten til en nettside ved hjelp av et table. 
+					Da puttet man elementer inn i radene og kolonnene til tabellen, for så å style slik man ønsket.
+					Dette er heldigvis ikke noe man gjør i dag.</p>
+					
+					<h3>CSS Float</h3>
+					<p>Floating er en egen posisjoneringsteknikk i CSS. 
+					Man angir hvordan elementer skal "flyte" i forhold til hverandre. Denne ble mer brukt tidligere, 
+					før Flexbox og Grid kom på banen. Fordelen med float er den gode kompatibiliteten.</p>
+
+					<h3>CSS Flexbox</h3>
+					<p>Flexbox er en nyere, endimosjonal, posisjoneringsteknikk i CSS. 
+					Hovedideen bak flex er å gi en container mulighet til å endre dens bredde, høyde og rekkefølge. 
+					Dette for å best fylle ledig plass. Dette gjør at den også håndterer skalering av nettsiden til ulike skjermstørrelser og medietyper. En flexbeholder utvider elementer for å fylle ledig plass, eller krymper for å forhindre overflow.</p>
+
+					<h3>CSS Grid</h3>				
+					<p>Grid er den nyeste, todimosjonale, posisjoneringsteknikken i CSS. 
+					Siden den er todimosjonal, håndterer den både kolonner og rader. For å bruke Grid skriver man CSS-kode både for et forelder-element, 
+					som blir containeren, og til dette elementets barn. Disse barna blir da Grid Items. Man vil altså definere grid-områder i rader og kolonner før man skriver videre kode.</p>
+
+					<h3>Optimal løsning</h3>
+					<p>Det mest optimale i dag, når det kommer til layouten på en nettside, vil være å bruke både Flexbox og Grid.
+					Grid er mest fleksibel, mens Flexbox er den med størst vekst og har noe bedre støtte.</p>
+
+					<figure>
+						<img src="img/css-layouts.jpg" alt="CSS Layouts">				
+						<figcaption>Illustrasjon: Flexbox vs Grid</figcaption>
+					</figure>
+
+					<h3>Lenker til eksterne ressurser</h3>
+					<ul>
+						<li>
+							<a target="_blank" href="https://css-tricks.com/complete-guide-table-element/">Mer om Table</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://css-tricks.com/all-about-floats/">Mer om Float</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Mer om Flexbox</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://css-tricks.com/snippets/css/complete-guide-grid/">Mer om Grid</a>
+						</li>
+					</ul>
+				</div>
+			</article>
+		</main>
+		<footer>
+			<a href="mailto:linesaa@hiof.no">linesaa@hiof.no</a>
+			<p>&copy; <time datetime="2018">2018</time> - Line Sharina Hagen</p>
+		</footer>
+	</div>
+	<script>
+		(function(){
+			// Meny knapp
+			var btn = document.querySelector("#nav-btn")
+			var nav = document.querySelector('.container > nav')
+
+			function toggleNav() {
+				nav.classList.toggle("show");
+			}
+
+			btn.addEventListener("click", toggleNav); 
+			
+			// Dropdown meny
+			var dropdownTrigger = nav.querySelector('.dropdown')
+			var dropdownTriggerA = nav.querySelector('.dropdown > a')
+			
+			function toggleDropdown() {
+				dropdownTrigger.classList.toggle("show");
+			}
+
+			dropdownTrigger.addEventListener("click", toggleDropdown);
+			dropdownTriggerA.addEventListener("blur", toggleDropdown);
+
+		})();
+	</script>
+</body>
+</html>

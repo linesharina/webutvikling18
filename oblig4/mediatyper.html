@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+	<title>Webutvikling 2018</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
+	<link rel="stylesheet" href="css/stylesheet.css" />
+	<link rel="stylesheet" href="css/oblig3-stylesheet-artikkel.css" />
+	<link rel="stylesheet" media="print" href="css/print.css"/>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+</head>
+<body>
+	<a class="jump-to-content" href="#innhold">Hopp til innhold</a>
+	<div class="container">
+		<header>
+			<h1>Webutvikling</h1>
+			<h2>Line Sharina Aamodt</h2>
+		</header>
+		<nav>
+			<button id="nav-btn">Meny</button>
+			<a href="index.html">Hjem</a>
+			<a href="responsivt-design.html">Responsivt design</a>
+			<a href="universell-utforming.html">Universell utforming</a>
+			<a href="mamp.html">MAMP</a>
+			<ul>
+				<li class="dropdown">
+					<button>Oblig 2</button>
+					<ul>
+						<li><a href="skisser.html">Skisser</a></li>
+						<li><a href="git.html">Git/Github</a></li>
+						<li><a href="#mediatyper">Media typer</a></li>
+						<li><a href="css-layouts.html">CSS Layouts</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main id="innhold" class="articles">
+			<article id="mediatyper">
+				<img src="img/artikkel2.jpg" alt="Foto: Forskjellige enheter">
+				<div class="article-content">
+					<h2>Mediatyper</h2>
+					<p>Media typer lar deg spesifisere CSS for forskjellige enheter og media typer. Det finnes flere forskjellige  mediatyper som er definert i CSS, som for eksempel all, print, projection, speech, braille, tty og tv. Jeg har imidlertid valgt å kun skrive litt om all, screen og print. 
+					Dette fordi de resterende medietypene er på vei ut, siden de nå blir dekket av regler for tilgjengelighet og responsivt design.</p>
+					<p>Kort forklaring:</p>
+					<ul>
+						<li>All: Tilsvarer å ikke definere en mediatype i det hele tatt, siden den vil gjelde uansett.</li>
+						<li>Screen: CSS-spesifikasjon for alle enheter som har en skjerm</li>
+						<li>Print: Brukes for å tilpasse utseende til en utskrift.</li>
+					</ul>
+					<h3>Hvordan bruker man disse?</h3>				
+					<p>Det finnes tre forskjellige måter å bruke mediatyper på. Første metoden er å linke til en ekstern CSS-fil:</p>
+					<pre>&lt;link rel="stylesheet" type="text/css" media="print" href="print-stilark.css"/&gt;</pre>
+					
+					<p>Man kan også bruke mediatyper i en eksisterende CSS-fil (inline), ved å lage egne @media-blokker:</p>
+					<!-- Beklager følgende grusomme indentering: -->
+					<pre>
+@media print {
+	p {
+		color: black;
+	}
+}
+					</pre>
+					<p>Man kan også importere stilark i CSS:</p>
+					<pre>@import url('print-css') print</pre>
+
+					<h3>Fordeler og ulemper</h3>				
+					<p>Fordelen med mediatyper er at man kan tilpasse design etter hvilken enhet som brukes. 
+					Ulempen er at man får mer, og ikke minst mer kompleks, CSS-kode.</p>					
+				</div>
+			</article>
+		</main>
+		<footer>
+			<a href="mailto:linesaa@hiof.no">linesaa@hiof.no</a>
+			<p>&copy; <time datetime="2018">2018</time> - Line Sharina Hagen</p>
+		</footer>
+	</div>
+	<script>
+		(function(){
+			// Meny knapp
+			var btn = document.querySelector("#nav-btn")
+			var nav = document.querySelector('.container > nav')
+
+			function toggleNav() {
+				nav.classList.toggle("show");
+			}
+
+			btn.addEventListener("click", toggleNav); 
+			
+			// Dropdown meny
+			var dropdownTrigger = nav.querySelector('.dropdown')
+			var dropdownTriggerA = nav.querySelector('.dropdown > a')
+			
+			function toggleDropdown() {
+				dropdownTrigger.classList.toggle("show");
+			}
+
+			dropdownTrigger.addEventListener("click", toggleDropdown);
+			dropdownTriggerA.addEventListener("blur", toggleDropdown);
+
+		})();
+	</script>
+</body>
+</html>

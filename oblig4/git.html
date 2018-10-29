@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+	<title>Webutvikling 2018</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
+	<link rel="stylesheet" href="css/stylesheet.css" />
+	<link rel="stylesheet" href="css/oblig3-stylesheet-artikkel.css" />
+	<link rel="stylesheet" media="print" href="css/print.css"/>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+</head>
+<body>
+	<a class="jump-to-content" href="#innhold">Hopp til innhold</a>
+	<div class="container">
+		<header>
+			<h1>Webutvikling</h1>
+			<h2>Line Sharina Aamodt</h2>
+		</header>
+		<nav>
+			<button id="nav-btn">Meny</button>
+			<a href="index.html">Hjem</a>
+			<a href="responsivt-design.html">Responsivt design</a>
+			<a href="universell-utforming.html">Universell utforming</a>
+			<a href="mamp.html">MAMP</a>
+			<ul>
+				<li class="dropdown">
+					<button>Oblig 2</button>
+					<ul>
+						<li><a href="skisser.html">Skisser</a></li>
+						<li><a href="#git">Git/Github</a></li>
+						<li><a href="mediatyper.html">Media typer</a></li>
+						<li><a href="css-layouts.html">CSS Layouts</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main id="innhold" class="articles">
+			<article id="git">
+				<img src="img/github-logo.jpg" alt="Foto: Github logo">
+				<div class="article-content">
+					<h2>Git og Github</h2>
+					<p>Git er teknologi, mens Github er en tjeneste som bruker teknologien Git.
+					Git bidrar til å holde styr på prosjekter. For det gjør at man får oversikt på hva som 
+					blir gjort i et prosjekt, og ikke minst hvem som gjør det. Enkelt sagt kan man si at
+					Git er et system for distribuert versjonskontroll.</p>
+					<h3>Fordeler</h3>				
+					<p>En av de største fordelene er at man, som sagt, får versjonskontroll. Dette gjør blant annet at man
+					kan rulle tilbake til en tidligere versjon ved feil, og samtidig beholde den nåværende versjonen. 
+					Noe som er utrolig verdifullt når man sitter og utvikler. Det er også nyttige når man samarbeider med andre.
+					En annen stor fordel er at man får sikkerhetskopier av
+					prosjektene sine, noe som er veldig viktig om man får slettet filer ved uhell, gjort noe feil eller 
+					blir utsatt for uforutsette hendelser som for eksempel tyveri av datamaskinen din. Med Git blir det også 
+					enklere å samarbeide med andre utviklere på et prosjekt, da man har mulighet til å "merge" kode sammen.</p>
+					<h3>Mine tanker</h3>				
+					<p>Jeg har selv brukt Git og GitKraken de siste årene. I hovedsak med tanke på backup, men også fordi 
+					det gjør det så mye lettere å samarbeide med prosjekter, eller når jeg jobber på forskjellige enheter.
+					Jeg syns at Git og tilhørende tjenester er noe alle burde bruke i webutviklingsverdenen. Det burde
+					egentlig vært en selvfølge.</p>
+					<figure>
+						<img src="img/latest-commit.jpg" alt="Seneste commit">
+						<figcaption>Min siste commit</figcaption>
+					</figure>					
+				</div>
+			</article>
+		</main>
+		<footer>
+			<a href="mailto:linesaa@hiof.no">linesaa@hiof.no</a>
+			<p>&copy; <time datetime="2018">2018</time> - Line Sharina Hagen</p>
+		</footer>
+	</div>
+	<script>
+		(function(){
+			// Meny knapp
+			var btn = document.querySelector("#nav-btn")
+			var nav = document.querySelector('.container > nav')
+
+			function toggleNav() {
+				nav.classList.toggle("show");
+			}
+
+			btn.addEventListener("click", toggleNav); 
+			
+			// Dropdown meny
+			var dropdownTrigger = nav.querySelector('.dropdown')
+			var dropdownTriggerA = nav.querySelector('.dropdown > a')
+			
+			function toggleDropdown() {
+				dropdownTrigger.classList.toggle("show");
+			}
+
+			dropdownTrigger.addEventListener("click", toggleDropdown);
+			dropdownTriggerA.addEventListener("blur", toggleDropdown);
+
+		})();
+	</script>
+</body>
+</html>

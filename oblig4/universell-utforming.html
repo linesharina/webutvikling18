@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+	<title>Webutvikling 2018</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
+	<link rel="stylesheet" href="css/stylesheet.css" />
+	<link rel="stylesheet" href="css/oblig3-stylesheet-artikkel.css" />
+	<link rel="stylesheet" media="print" href="css/print.css"/>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+</head>
+<body>
+	<a class="jump-to-content" href="#innhold">Hopp til innhold</a>
+	<div class="container">
+		<header>
+			<h1>Webutvikling</h1>
+			<h2>Line Sharina Aamodt</h2>
+		</header>
+		<nav>
+			<button id="nav-btn">Meny</button>
+			<a href="index.html">Hjem</a>
+			<a href="responsivt-design.html">Responsivt design</a>
+			<a href="#universell-utforming">Universell utforming</a>
+			<a href="mamp.html">MAMP</a>
+			<ul>
+				<li class="dropdown">
+					<button>Oblig 2</button>
+					<ul>
+						<li><a href="skisser.html">Skisser</a></li>
+						<li><a href="git.html">Git/Github</a></li>
+						<li><a href="mediatyper.html">Media typer</a></li>
+						<li><a href="css-layouts.html">CSS Layouts</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main id="innhold" class="articles">
+			<article id="universell-utforming">
+				<img src="img/universell-utforming.jpg" alt="Illustrasjon: Universell utforming">
+				<div class="article-content">
+					<h2>Universell utforming</h2>
+					<p>Universell uforming er ikke bare utrolig viktig. Det er også lovpålagt. Universell utforming går ut på at løsningen, i denne sammenhengen en nettside, kan brukes av alle. Det vil si at man må gjøre nettsiden brukbar for de svaksynte, blinde og for de som har redusert mobilitet. Der det er mulig skal man ha lik tilgang, og om det ikke er mulig skal man ha likeverdig tilgang. Det betyr rett og slett at alle skal ha lik tilgang, på tross av andre faktorer.</p>
+					
+					<h3>Hvilke brukere tenker vi på?</h3>
+					<p>Det er lett å tenke at universell utforming kun gjelder for eksemplene nevnt ovenfor, som de svaksynte, blinde og bevegelseshemmede. Da er det fort gjort å glemme at en begrensning kan være situasjonsbetont, og ikke nødvendigvis trenger å være permanent. Gode eksempler på dette er å ha brukket en arm, få hjernerystelse eller rett og slett bare holder/bærer noe med armen.</p>
+					
+					<h3>Hvorfor universell utforming?</h3>
+					<p>Først og fremst så vil man med universell utforming inkludere en stor brukermasse. Mange fler vil da ha mulighet til å lese, bruke og kjøpe på nettstedet ditt. For mange vil det derfor også være lønnsomt å implementere universell utforming. I tillegg til dette er det også flere fordeler. Man gjør det enklere for alle, og gir alle like muligheter, og som DIFI så fint sier:</p>
+					<blockquote>" Nødvendig for noen, men bra for alle "</blockquote>
+
+					<h3>Universell utforming i Norge</h3>
+					<p>I Norge er som sagt universell utforming lovpålagt. Lovkravet gjelder for alle nye løsninger som utvikles og publiseres etter 1. juli 2014. Det gjelder også for eldre løsninger som blir oppgradert eller designet på nytt. Fra og med 1. januar 2021 skal alle nettsteder og IKT-løsninger være universell utformet.</p>
+
+					<h3>Loven</h3>
+					<p>Loven krever at det er samsvar med WCAG 2.0. Dette er en internasjonal standard.
+					WCAG 2.0 er delt inn i 4 fokursområder, nemlig at løsningen skal være lesbar, brukbar, forståelig og robust. WCAG 2.0 blir også delt inn i tre nivåer: A, AA og AAA. De fleste kravene i Norge er i kategorien A, men vi har også noen få krav i AA. AAA er strengest, men det er heller ikke påkrevd noe på dette nivet her til lands.
+
+					<h3>Universell utforming på denne siden</h3>
+					<p>For å implimentere universell utforming på denne siden, har jeg gjort følgende:</p>
+					<ul>
+						<li>Laget "Hopp til innhold"-knapp, slik at man kan hoppe rett til artiklene.</li>
+						<li>Har en fornuftig struktur på både HTML-kode og tekst.</li>
+						<li>Gode kontraster</li>
+						<li>Sørget for god lesbarhet</li>
+						<li>Har fornuftige alternative tekster til bilder</li>
+					</ul>
+					<figure>
+						<img src="img/uu-hopp-til-innhold.png" alt="Bilde av hopp-til-innhold-knapp">
+						<figcaption>Bilde av "Hopp-til-innhold"-knapp</figcaption>
+					</figure>
+
+					<h3>Vil du lære mer?</h3>
+					<p>Her har du flere eksterne artikler om universell utforming:</p>
+					<ul>
+						<li><a target="_blank" href="https://uu.difi.no/krav-og-regelverk/losningsforslag-web">Difi - Løsningsforslag for web</a></li>
+						<li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility">What is accessibility?</a></li>
+						<li><a target="_blank" href="https://developers.google.com/web/fundamentals/accessibility/">Google about Accessibilty</a></li>
+					</ul>
+				</div>
+			</article>
+		</main>
+		<footer>
+			<a href="mailto:linesaa@hiof.no">linesaa@hiof.no</a>
+			<p>&copy; <time datetime="2018">2018</time> - Line Sharina Hagen</p>
+		</footer>
+	</div>
+	<script>
+		(function(){
+			// Meny knapp
+			var btn = document.querySelector("#nav-btn")
+			var nav = document.querySelector(".container > nav")
+
+			function toggleNav() {
+				nav.classList.toggle("show");
+			}
+
+			btn.addEventListener("click", toggleNav); 
+			
+			// Dropdown meny
+			var dropdownTrigger = nav.querySelector(".dropdown")
+			var dropdownTriggerA = nav.querySelector(".dropdown > a")
+			
+			function toggleDropdown() {
+				dropdownTrigger.classList.toggle("show");
+			}
+
+			dropdownTrigger.addEventListener("click", toggleDropdown);
+			dropdownTriggerA.addEventListener("blur", toggleDropdown);
+
+		})();
+	</script>
+</body>
+</html>
