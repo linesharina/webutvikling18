@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nb">
 <head>
-	<title>Webutvikling 2018</title>
+	<title>CMS-systemer - Webutvikling 2018</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
 	<link rel="stylesheet" href="css/stylesheet.css" />
@@ -21,9 +21,10 @@
 		<nav>
 			<button id="nav-btn">Meny</button>
 			<a href="index.html">Hjem</a>
+			<a href="wordpress.html">Wordpress</a>
 			<a href="#CMS">CMS-systemer</a>
 			<a href="responsivt-design.html">Responsivt design</a>
-			<a href="#universell-utforming">Universell utforming</a>
+			<a href="universell-utforming.html">Universell utforming</a>
 			<a href="mamp.html">MAMP</a>
 			<ul>
 				<li class="dropdown">
@@ -72,32 +73,28 @@
 					mange temaer, utvidelser og integrajsoner som er gratis. Det forenkler publisering, redigering og sletting av innhold. 
 					Innholdsprodusenter kan også ha brukerkontroll, og styre hvordan tilgang de ansatte skal ha.
 					Det er også nybegynner vennlig, så de fleste som er litt interesse kan fort sette seg inn i hvordan
-					man bruker dette.
+					man bruker dette. Ikke minst kan man forhåndsvise innlegg før man poster dem på siden.
 					</p>
 					
 					<h3>Ulemper</h3>
 					<h4>For begge</h4>
-					<p>Man er avhengig av teknisk hjelp hvis man skal gjøre store endringer. Veldig låst til hvordan systemet vil at det skal fungere.
-					Det er mye jobb å få et CMS-system til å gjøre noe det ikke er laget for. Dette kan fort bli dyrt for innholdsprodusenter
+					<p>
+					En ulempe for begge parter er at man er veldig låst til hvordan systemet vil at det skal fungere. Det er nemlig mye jobb å få et CMS-system til å gjøre noe det ikke er laget for. Dette kan fort bli dyrt for innholdsprodusenter
 					og tidkrevende for utviklere.</p>
-					<p>CMS-systemer kan bli veldig store og derfor trege.</p>
+					<p>En annen ulempe er at CMS-systemer kan bli veldig store og derfor trege, og ha mye unødvendig kode og funksjonalitet.</p>
 
 					<h4>For utviklere</h4>
-					<p>Det er systemet som bestemmer hva du får lov til å gjøre og hva du ikke kan gjøre. Mister derfor noe frihet.</p>
+					<p>En ulempe for utviklere er at det er systemet som bestemmer hva du får lov til å gjøre og hva du ikke kan gjøre. Man mister derfor noe frihet. En annen ulempe er at man må hele tiden passe på at man har den nyeste sikkerhetsoppdateringen, da CMS-systemer er store mål.</p>
 
 					<h4>For innholdsprodusenter</h4>
-
-					<figure>
-						<img src="img/uu-hopp-til-innhold.png" alt="Bilde av hopp-til-innhold-knapp">
-						<figcaption>Bilde av "Hopp-til-innhold"-knapp</figcaption>
-					</figure>
+					<p>En ulempe for en innholdsprodusent er at man er avhengig av teknisk hjelp hvis man skal gjøre store endringer. En annen ulempe er at hvis man velger feil CMS-system kan det fort bli dyrt.</p>
 
 					<h3>Vil du lære mer?</h3>
 					<p>Her har du flere eksterne artikler om CMS-systemer:</p>
 					<ul>
-						<li><a target="_blank" href="https://uu.difi.no/krav-og-regelverk/losningsforslag-web">Difi - Løsningsforslag for web</a></li>
-						<li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility">What is accessibility?</a></li>
-						<li><a target="_blank" href="https://developers.google.com/web/fundamentals/accessibility/">Google about Accessibilty</a></li>
+						<li><a target="_blank" href="https://www.episerver.no/hvorfor-episerver/ressurser/Vare-blogger/stein-viggo-grenersen/hva-er-cms/">Hva er et CMS?</a></li>
+						<li><a target="_blank" href="https://no.wikipedia.org/wiki/Publiseringssystem">Publiseringssystem</a></li>
+						<li><a target="_blank" href="https://www.vasont.com/resources/how-cms-benefits-organizations.html">Benefits of CMS</a></li>
 					</ul>
 				</div>
 			</article>
@@ -107,30 +104,6 @@
 			<p>&copy; <time datetime="2018">2018</time> - Line Sharina Hagen</p>
 		</footer>
 	</div>
-	<script>
-		(function(){
-			// Meny knapp
-			var btn = document.querySelector("#nav-btn")
-			var nav = document.querySelector(".container > nav")
-
-			function toggleNav() {
-				nav.classList.toggle("show");
-			}
-
-			btn.addEventListener("click", toggleNav); 
-			
-			// Dropdown meny
-			var dropdownTrigger = nav.querySelector(".dropdown")
-			var dropdownTriggerA = nav.querySelector(".dropdown > a")
-			
-			function toggleDropdown() {
-				dropdownTrigger.classList.toggle("show");
-			}
-
-			dropdownTrigger.addEventListener("click", toggleDropdown);
-			dropdownTriggerA.addEventListener("blur", toggleDropdown);
-
-		})();
-	</script>
+	<script src="js/global.js" async></script>
 </body>
 </html>

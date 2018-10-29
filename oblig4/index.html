@@ -18,6 +18,7 @@
 		</header>
 		<nav>
 			<button id="nav-btn">Meny</button>
+			<a href="wordpress.html">Wordpress</a>
 			<a href="cms-systemer.html">CMS-systemer</a>
 			<a href="responsivt-design.html">Responsivt design</a>
 			<a href="universell-utforming.html">Universell utforming</a>
@@ -40,20 +41,20 @@
 			</header>
 			<section class="articles">
 				<article>
-					<img src="img/wordpress.jpg" alt="Illustrasjon: Wordpress">
+					<img src="img/wordpress.jpg" alt="Logo: Wordpress">
 					<div class="article-content">
 						<h3>Wordpress</h3>
-						<p>Egen løsning, utfordringer og problemer</p>
+						<p>Brukerveiledning for Wordpress installasjon og testing av systemet</p>
 						<div class="article-read-more">
-							<a href="responsivt-design.html">Mer om Wordpress</a>
+							<a href="wordpress.html">Mer om Wordpress</a>
 						</div>
 					</div>
 				</article>
 				<article>
-					<img src="img/cms.png" alt="Illustrasjon: CMS-system">
+					<img src="img/cms.png" alt="Illustrasjon: CMS-systemer">
 					<div class="article-content">
 						<h3>CMS-systemer</h3>
-						<p>Fordeler og ulemper med CMS-systemer.</p>
+						<p>Fordeler og ulemper ved CMS-systemer</p>
 						<div class="article-read-more">
 							<a href="cms-systemer.html">Mer om CMS-systemer</a>
 						</div>
@@ -146,35 +147,6 @@
 			<p>&copy; <time datetime="2018">2018</time> - Line Sharina Hagen</p>
 		</footer>
 	</div>
-	<script>
-		(function(){
-			// Meny knapp
-			var btn = document.querySelector("#nav-btn")
-			var nav = document.querySelector('.container > nav')
-
-			function toggleNav() {
-				nav.classList.toggle("show");
-			}
-
-			btn.addEventListener("click", toggleNav); 
-
-			
-			// Dropdown meny
-			var dropdownTrigger = nav.querySelector('.dropdown > button')
-			
-			function toggleDropdown(e) {
-				e.stopPropagation();
-				dropdownTrigger.classList.toggle("show");
-
-				window.addEventListener("click", function() {
-					dropdownTrigger.classList.remove("show");
-					this.removeEventListener('click', arguments.callee);
-				});
-			}
-
-			dropdownTrigger.addEventListener("click", toggleDropdown);
-
-		})();
-	</script>
+	<script src="js/global.js" async></script>
 </body>
 </html>
