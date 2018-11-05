@@ -1,0 +1,71 @@
+body {
+	display: block;
+	background-color: #fff;
+}
+
+body > footer {
+	display: none;
+}
+
+p, a, li {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.2em;
+}
+
+a:after{
+    content:" (" attr(href) ") ";
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+img, pre {
+	page-break-inside: avoid;
+}
+
+img {
+	display: block;
+	width: auto;
+	max-width: 100%;
+}
+
+/* Print oblig 3*/
+.jump-to-content,
+.container > header,
+.container > nav,
+.container > footer {
+	display: none;
+}
+
+.articles article {
+	max-width: 100%;
+}
+
+/* Print oblig 2*/
+.article-nav {
+	display: none;
+}
+
+.article {
+	display: block;
+	flex-direction: column;
+}
+
+.article-left,
+.article-right {
+	width: 100%;
+}
+
+.article-left p,
+.article-left li,
+.article-left pre {
+	width: 100%;
+}
+
+.article-right img {
+	display: block;
+	height: auto;
+	width: auto;
+	max-width: 90%;
+	overflow: auto;
+	page-break-inside: avoid;
+}

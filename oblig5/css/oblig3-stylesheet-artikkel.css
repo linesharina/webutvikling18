@@ -1,0 +1,69 @@
+
+figcaption {
+	text-align: center;
+	padding: 10px;
+	font-style: italic;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+.container > main {
+	grid-column: 1/13;
+	padding: 50px 0;	
+	background-color: rgba(241,241,241,0.57);
+}
+
+.articles {
+	max-width: 100%;
+}
+
+.articles article {
+	margin-top: 0;
+	max-width: 50%;
+}
+
+.articles img {
+	max-width: 100%;
+}
+
+.article-content {
+	padding: 50px;
+}
+
+.article-content h3 {
+	padding-top: 35px;
+	margin: 0;
+}
+
+.article-content p {
+	margin: 15px 0;
+}
+
+.article-content pre {
+	width: 100%;
+	max-width: 100%;
+	background-color: #f7f7f7;
+	padding: 10px;
+	overflow: auto;
+}
+
+
+@media (max-width: 940px) {
+	.articles article {
+		max-width: 90%;
+	}
+}
+
+@media (max-width: 782px) {
+	.article-content {
+		padding: 25px;
+	}
+}
+
+@media (max-width: 320px) {
+	.articles article {
+		max-width: 100%;
+	}
+}

@@ -1,0 +1,380 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Handlee', cursive;
+	margin: 0;
+}
+
+h2, h3, h4 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+a, p, li, button {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em; 
+}
+
+a {
+	color: black;
+}
+
+figure {
+	margin: 30px 0;
+}
+
+figcaption {
+	text-align: center;
+	padding: 10px;
+	font-style: italic;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+/* Styler alle knapper */
+button,
+.button {
+	display: inline-block;
+	background-color: #ffe25b;
+	padding: 10px 20px;
+	text-decoration: none;
+	border: 0;
+}
+
+.button:hover,
+.button:focus {
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+/* Knapp som hopper til hovedinnhold*/
+.jump-to-content {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    z-index: 1;
+    display: inline-block;
+}
+
+.jump-to-content:focus {
+    top: 0;
+}
+
+/*Wrapper main*/
+.container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 400px 100px auto 200px;
+}
+
+/* Header */
+.container > header {
+	padding-top: 130px;
+	grid-column: 1/13;
+	background-image: url('../img/header-img.jpg');
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.container > header h2 {
+	font-weight: 300;
+	margin: 0;
+}
+
+/* Meny */
+.container > nav {
+	grid-column: 1/13;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #d5d5d5;
+	box-shadow: 1px 4px 12px 0px rgba(0,0,3,0.05);
+	position: sticky;
+	top: 0;
+	background-color: white; 
+}
+
+.container > nav > button {
+	display: none;
+}
+
+.container > nav > a,
+.container > nav > ul,
+.container > nav > ul button {
+	text-decoration: none;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 30px;
+}
+
+.container > nav a {
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.container > nav a:hover,
+.container > nav a:focus,
+.container > nav button:focus {
+	text-decoration: underline;
+}
+
+.container > nav ul {
+	list-style-type: none;
+	position: relative;
+	padding: 0;
+}
+
+.container > nav > ul button {
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+
+/* Dropdown i meny */
+.container > nav > ul > li > ul {
+	display: none;
+	position: absolute;
+	padding-left: 0;
+	background-color: white;
+	top: 100%;
+	box-shadow: 1px 4px 12px 0px rgba(0, 0, 3, 0.21);
+}
+
+.container > nav > ul > li > ul > li a {
+	display: block;
+	padding: 15px 30px;
+}
+
+.container > nav > ul > li:hover > ul,
+.container > nav > ul > li > button.show + ul {
+	display: block;
+}
+
+/* Hoveddelen */
+.container > main {
+	grid-column: 1/11;
+	padding: 100px 0;	
+	background-color: rgba(241,241,241,0.57);
+}
+
+.container > main > header {
+	display: flex;
+	justify-content: center;
+}
+
+/*Sidebaren */
+.container > aside {
+	grid-column: 11/13;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: start;
+	box-shadow: 1px 4px 12px 0px rgba(0, 0, 3, 0.21);
+}
+
+.container > aside > section {
+	width: 100%;
+	padding: 0 20px;
+}
+
+/* Footer */
+.container > footer {
+	grid-column: 1/13;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	align-items: center; 
+	background-color: #282727;
+	color: white;
+}
+
+.container > footer a {
+	color: white;
+}
+
+.container > footer a:hover,
+.container > footer a:focus {
+	font-weight: 700;
+}
+
+/* Artikkel seksjonen */
+.articles {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.articles article,
+.articles img {
+	width: 100%;
+	max-width: 300px;
+}
+
+/* Artikkel boks */
+.articles article {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 40px;
+	box-shadow: 2px 1px 20px 0px #d5d5d5;
+	background-color: white;
+}
+
+.article-content {
+	padding: 30px;
+}
+
+.article-content p {
+	margin: 20px 0 40px;
+}
+
+.article-read-more {
+	border-top: 1px solid rgba(0,0,0,0.19);
+	padding: 30px 0;
+}
+
+.article-read-more a:hover,
+.article-read-more a:focus,
+.aside-articles a:hover,
+.aside-articles a:focus {
+	font-weight: 700;
+}
+
+.aside-video iframe, 
+.aside-google-search .button {
+	width: 100%;
+	box-shadow: 3px 2px 20px 0px #d5d5d5;
+}
+
+.aside-video iframe {
+	height: 150px;
+}
+
+.aside-google-search .button {
+	text-align: center;
+	padding: 20px; 
+	font-size: 1.2em;
+}
+
+.aside-articles a {
+	line-height: 2;
+}
+
+
+@media (max-width: 1180px) {
+	.container {
+		grid-template-rows: 400px 100px auto auto 150px;
+	}
+
+	.container > main,
+	.container > footer {
+		grid-column: 1/13;
+	}
+
+	.container aside {
+		grid-column: 4/11;
+		padding: 70px 0;
+		box-shadow: 0 0 0 0;
+	}
+
+	.aside-video iframe {
+		height: 350px;
+	}
+}
+
+@media (max-width: 1145px) {
+	.container {
+		grid-template-rows: 400px auto auto auto auto;
+	}
+
+	.container > header {
+		background-position: unset;
+	}
+
+	.container > nav {
+		flex-direction: column;
+	}
+	
+	.container > nav > button {
+		display: block;
+		margin: 30px;
+	}
+
+	.container > nav > a,
+	.container > nav > ul {
+		display: none;
+		margin: 15px;
+	}
+
+	.container > nav.show > a,
+	.container > nav.show > ul {
+		display: block;
+	}
+}
+
+@media (max-width: 940px) {
+
+
+	.articles {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.articles article,
+	.articles img {
+		width: 100%;
+		max-width: 700px;
+	}
+
+}
+
+/* Mobil-styling */
+@media (max-width: 782px) {
+	.container > nav {
+		justify-content: space-around;
+	}
+
+	.container main,
+	.container aside,
+	.container footer {
+		grid-column: 1/13;
+	}
+
+	.container aside {
+		padding: 70px 0;
+	}
+	.articles {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.articles article,
+	.articles img {
+		width: 100%;
+		max-width: 300px;
+	}
+
+	.aside-video iframe {
+		height: 250px;
+	}
+}
