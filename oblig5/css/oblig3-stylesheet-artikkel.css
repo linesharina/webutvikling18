@@ -41,7 +41,8 @@ blockquote {
 	margin: 15px 0;
 }
 
-.article-content pre {
+.article-content pre,
+.article-content code {
 	width: 100%;
 	max-width: 100%;
 	background-color: #f7f7f7;
@@ -49,6 +50,10 @@ blockquote {
 	overflow: auto;
 }
 
+.article-content code {
+	display: flex;
+	margin: 10px;
+}
 
 @media (max-width: 940px) {
 	.articles article {
