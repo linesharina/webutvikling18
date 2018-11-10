@@ -4,6 +4,7 @@
 	<title>SEO - Webutvikling 2018</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
+	<meta name="description" content="Denne artikkelen beskriver hva SEO er, viktigheten av SEO, hvordan det har blitt implementert og hvilke SEO-tiltak som har blitt gjort på denne siden.">
 	<link rel="stylesheet" href="css/stylesheet.css" />
 	<link rel="stylesheet" href="css/oblig3-stylesheet-artikkel.css" />
 	<link rel="stylesheet" media="print" href="css/print.css"/>
@@ -21,6 +22,7 @@
 		<nav>
 			<button id="nav-btn">Meny</button>
 			<a href="index.html">Hjem</a>
+			<a href="sosiale-medier.html">Sosiale medier</a>
 			<a href="#SEO">SEO</a>
 			<a href="wordpress.html">Wordpress</a>
 			<a href="cms-systemer.html">CMS-systemer</a>
@@ -61,25 +63,38 @@
 					<p>Jeg har tatt utgangspunkt i min oblig 4 når jeg skulle gjøre tester og analysering for søkemotoroptimalisering.</p>
 
 					<h4>Basics</h4>
-					<p>Et viktig element i SEO er å sørge for at innholdet er leslig for søkemotorer. Dette gjør man ved å skille innhold, design og funksjonalitet. En annen viktig faktor er semantiske tagger og bruk av alt-attributtet på bilder. Det er også viktig å validere siden. Alt dette er elementer jeg har vært bevisst på underveis, og har derfor noe basic SEO dekket.</p>
+					<p>Et viktig element i SEO er å sørge for at innholdet er leslig for søkemotorer. Dette gjør man ved å skille innhold, design og funksjonalitet. En annen viktig faktor er semantiske tagger og bruk av alt-attributtet på bilder. Det er også viktig å validere siden. Alt dette er elementer jeg har vært bevisst på underveis, og har derfor noe basic SEO dekket. Dessverre er ikke validatoren til pluginen jeg brukte helt riktig, så det var noe kode som validerer hos W3C som ikke validerte hos denne. Derfor får jeg ikke 100% på "Use valid HTML".</p>
 
 					<h4>Verktøy</h4>
 					<p>For å analyse SEO på nettsiden min lastet jeg ned en plugin som heter Checkbot. Den så dermed igjennom siden og kom med tilbakemelding om både feil og hva som var bra.</p>
 					<img src="https://i.xdh.no/2aa9eeb3f1d9" alt="SEO-analyse av mitt nettsted">
 
 					<h3>Tiltak</h3>
-					<p>Det første jeg gjorde for å forbedre SEO, var å lage unike titler. Dette begynte jeg på i forrige oblig, men glemte å fullføre. Derfor var det fortsatt mange duplikater av tittelen "Webutvikling 2018".</p>
 
-					<h4>Før var tittelen for de fleste artikkel-sidene:</h4>	
+					<h4>Unike titler</h4>	
+					<p>Det første jeg gjorde for å forbedre SEO, var å lage unike titler. Dette begynte jeg på i forrige oblig, men glemte å fullføre. Derfor var det fortsatt mange duplikater av tittelen "Webutvikling 2018".</p>
+					<p>Før var tittelen for de fleste artikkel-sidene:</p>	
 					<code>&lt;title&gt; Webutvikling 2018 &lt;/title&gt</code>
 
-					<h4>Nå:</h4>	
+					<p>Nå:</p>	
 					<code>&lt;title&gt; SEO - Webutvikling 2018 &lt;/title&gt</code>
 					<code>&lt;title&gt; Sosiale medier - Webutvikling 2018 &lt;/title&gt</code>
 					<code>&lt;title&gt; Microdata - Webutvikling 2018 &lt;/title&gt</code>
 					<code>&lt;title&gt; SVG - Webutvikling 2018 &lt;/title&gt</code>
 
+					<h4>Beskrivelse av sider</h4>
+					<p>En annen ting som ble gjort for å forbedre sidens SEO var å gi alle sidene en beskrivelse. Dette gjorde jeg ved å legge til en meta-tag i head. Under er et eksempel:</p>
+					<code>
+						&lt;head&gt;
+							&lt;meta name="description" content="Denne artikkelen beskriver hva SEO er, viktigheten av SEO og hvordan det har blitt implementert på denne siden."&gt;
+						&lt;/head&gt;
+					</code>
+							
+					<h4>Robot.txt</h4>
 					<p>Hastigheten påvirker også SEO.</p>
+
+					<h4>Sitemap</h4>
+
 
 				</div>
 			</article>
