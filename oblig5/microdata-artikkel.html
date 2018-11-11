@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+	<title>Microdata - Webutvikling 2018</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
+	<meta name="description" content="Dette er en enkel artikkel om microdata som beskriver hva det er, hvorfor det benyttes  og hvilke fordeler det har.">
+	<link rel="stylesheet" href="css/stylesheet.css" />
+	<link rel="stylesheet" href="css/oblig3-stylesheet-artikkel.css" />
+	<link rel="stylesheet" media="print" href="css/print.css"/>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+</head>
+<body>
+	<a class="jump-to-content" href="#innhold">Hopp til innhold</a>
+	<div class="container">
+		<header>
+			<h1>Webutvikling</h1>
+			<h2>Line Sharina Aamodt</h2>
+		</header>
+		<nav>
+			<button id="nav-btn">Meny</button>
+			<a href="index.html">Hjem</a>
+			<a href="microdata.html">Microdata</a>
+			<a href="sosiale-medier.html">Sosiale medier</a>
+			<a href="seo.html">SEO</a>
+			<a href="wordpress.html">Wordpress</a>
+			<a href="cms-systemer.html">CMS-systemer</a>
+			<ul>
+				<li class="dropdown">
+					<button>Oblig 3</button>
+					<ul>
+						<li><a href="responsivt-design.html">Responsivt design</a></li>
+						<li><a href="universell-utforming.html">Universell utforming</a></li>
+						<li><a href="mamp.html">MAMP</a></li>
+					</ul>
+				</li>
+			</ul>	
+			<ul>
+				<li class="dropdown">
+					<button>Oblig 2</button>
+					<ul>
+						<li><a href="skisser.html">Skisser</a></li>
+						<li><a href="git.html">Git/Github</a></li>
+						<li><a href="mediatyper.html">Media typer</a></li>
+						<li><a href="css-layouts.html">CSS Layouts</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main id="innhold" class="articles">
+			<article>
+				<div class="article-content">
+				<h2>Eksempelside for Microdata - Artikkel</h2>
+					<div itemscope itemtype="http://schema.org/Article">
+						<img itemprop="image" src="img/microdata-artikkel.png" alt="Skjermbilde av ny funksjon">
+						<h3 itemprop="headline">Endelig kommer denne funksjonen til iMessage</h3>
+						<time itemprop="datePublished" datetime="2018-08-18">18. August 2018</time>
+						<p itemprop="author">Line Hagen</p>
+						<p>Publisert av <span itemprop="publisher">Datahjelpen AS</span></p>
+						<span itemprop="articleBody">
+							<h4>HVA BETYR DETTE?</h4>
+							<p>I mange år har Apple tillatt iMessage-brukere å bruke en e-postadresse som avsender ved siden av telefonnummeret sitt. Denne funksjonen kan for eksempel være nyttig om du ofte endrer telefonnummeret eller reiser mye til utlandet.</p>
+							<p>Som sagt, dette kan være en nyttig funksjon. Problemet er at iOS lager separate meldingstråder for e-postadresser og telefonnummeret, selv om de tilhører samme person. Med iOS 12 vil altså dette irritasjonsmomentet ikke lenger være et problem</p>
+							<p>Med andre ord, hvis  en av dine kontakter sender meldinger fra både e-postadressen og telefonnummeret sitt, vil meldingene fra denne kontakten alltid samle seg i en tråd.</p>
+
+							<h4>HVORDAN TA I BRUK FUNKSJONEN?</h4>
+							<p>I fremtiden vil denne funksjonen være en del av Apples iOS 12 versjon. Akkurat nå er den kun tilgjengelig for beta testere som kjører iOS 12 Beta 8 på deres Apple enheter.</p>
+							<p>Fordi  funksjonen nylig ble introdusert vil ikke brukere med en versjon før iOS Beta 8 kunne bruke den.</p>
+							<p>iOS 12 er forventet og bli sluppet i September.</p>
+						</span>
+						
+					</div>
+				</div>
+			</article>
+		</main>
+		<footer>
+			<a href="mailto:linesaa@hiof.no">linesaa@hiof.no</a>
+			<p>&copy; <time datetime="2018">2018</time> - Line Sharina Hagen</p>
+		</footer>
+	</div>
+	<script src="js/global.js" async></script>
+</body>
+</html>
