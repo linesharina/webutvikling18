@@ -11,6 +11,20 @@
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+	<!-- Facebook Markup -->
+	<meta property="og:url" content="http://itstud.hiof.no/~linesaa/webutvikling18/oblig5/sosiale-medier.html" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Sosiale medier - Webutvikling 2018" />
+	<meta property="og:description" content="En enkel artikkel om teknisk implementasjon av sosiale medier." />
+	<meta property="og:image" content="http://itstud.hiof.no/~linesaa/webutvikling18/oblig5/img/sosialemedier.png" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@inntrengeren">
+	<meta name="twitter:title" content="Sosiale medier - Webutvikling 2018">
+	<meta name="twitter:description" content="En enkel artikkel om teknisk implementasjon av sosiale medier.">
+	<meta name="twitter:image" content="http://itstud.hiof.no/~linesaa/webutvikling18/oblig5/img/sosialemedier.png">
 </head>
 <body>
 	<a class="jump-to-content" href="#innhold">Hopp til innhold</a>
@@ -22,7 +36,8 @@
 		<nav>
 			<button id="nav-btn">Meny</button>
 			<a href="index.html">Hjem</a>
-			<a href="#sosiale-medier.html">Sosiale medier</a>
+			<a href="microdata.html">Microdata</a>
+			<a href="#sosiale-medier">Sosiale medier</a>
 			<a href="seo.html">SEO</a>
 			<a href="wordpress.html">Wordpress</a>
 			<a href="cms-systemer.html">CMS-systemer</a>
@@ -53,7 +68,82 @@
 				<img src="img/sosialemedier.png" alt="Illustrasjon: Sosiale medier">
 				<div class="article-content">
 					<h2>Sosiale medier</h2>
-					<p>SEO er en forkortelse for søkemotoroptimalisering, og er kunnskapen om å gjøre sidene man lager attraktive for søkemotorer. Man ønsker altså å få siden sin høyt oppe på treffene i de forskjellige søkemotorene. Søkemotoroptimalisering er en kontinuerig jobb som aldri er over.</p>
+					<p>Dette er en enkel artikkel om teknisk implementasjon av sosiale medier. For testing av Facebook Markup har jeg brukt denne siden:</p>
+					<a href="https://developers.facebook.com/tools/debug/">https://developers.facebook.com/tools/debug/</a>
+					<p>For testing av Twitter Cards har jeg brukt denne siden:</p>
+					<a href="https://cards-dev.twitter.com/validator">https://cards-dev.twitter.com/validator</a>
+
+					<h3>Tagging</h3>
+
+					<h4>Denne artikkelen</h4>
+					
+					<h5>Facebook</h5>
+					<p>Skjermbilde av kode:</p>
+					<img src="https://i.xdh.no/f497c6b77b91" alt="Skjermbilde av Markup-kode til denne artikkelen">
+					<p>Resultat:</p>
+					<img src="https://i.xdh.no/bad868872acc" alt="Markup resultat etter tagging av denne artikkelen">
+
+					<h5>Twitter</h5>
+					<p>Skjermbilde av kode:</p>
+					<img src="https://i.xdh.no/f4227b863344" alt="Skjermbilde av Twitter Cards kode til denne artikkelen">
+					<p>Resultat:</p>
+					<img src="https://i.xdh.no/83d57610bf00" alt="Twitter Cards resultat etter tagging av denne artikkelen">
+
+					<h4>Forsiden</h4>
+					
+					<h5>Facebook</h5>
+					<p>Skjermbilde av kode:</p>
+					<img src="https://i.xdh.no/f497c6b77b91" alt="Skjermbilde av Markup-kode til forside">
+					<p>Resultat:</p>
+					<img src="https://i.xdh.no/766c2a7d2075" alt="Markup resultat etter tagging av forside">
+
+					<h5>Twitter</h5>
+					<p>Skjermbilde av kode:</p>
+					<img src="https://i.xdh.no/2cf1eba1a7cf" alt="Skjermbilde av Twitter Cards kode til forside">
+					<p>Resultat:</p>
+					<img src="https://i.xdh.no/c1aa5d160df1" alt="Twitter Cards resultat etter tagging av forside">
+
+					<h4>SEO-artikkelen</h4>
+					
+					<h5>Facebook</h5>
+					<p>Skjermbilde av kode:</p>
+					<img src="https://i.xdh.no/3787b50e1df9" alt="Skjermbilde av Markup-kode til SEO-artikkel">
+					<p>Resultat:</p>
+					<img src="https://i.xdh.no/f7d6a54b7646" alt="Markup resultat etter tagging av artikkel om SEO">
+
+					<h5>Twitter</h5>
+					<p>Skjermbilde av kode:</p>
+					<img src="https://i.xdh.no/54c45fbd786a" alt="Skjermbilde av Twitter Cards kode til SEO-artikkel">
+					<p>Resultat:</p>
+					<img src="https://i.xdh.no/cfa98d80eb61" alt="Twitter Cards resultat etter tagging av artikkel om SEO">
+
+					<h3>Link til oppdaterte artikler</h3>
+					<p>I tillegg til denne artikkelen har disse sidene blitt oppdatert med både Facebook markup and Twitter Cards:</p>
+					<ul>
+						<li><a href="index.html">Forside</a></li>
+						<li><a href="seo.html">SEO-artikkel</a></li>
+					</ul>
+
+					<h3>Facebook Markup</h3>
+					<h4>Kommentarer til koden:</h4>
+					<ul>
+						<li>og:url brukes for å definere linken til en sak som skal deles på Facebook. Denne URL'en må være full.</li>
+						<li>og:type brukes for å definere hva som skal deles. For eksempel om det er en video, artikkel, bok eller et nettsted.</li>
+						<li>og:title brukes for å definere tittelen på det som skal deles.</li>
+						<li>og:description brukes for å definere en beskrivelse for det elementet som deles.</li>
+						<li>og:image brukes for å definere bildet som skal brukes i delingen på Facebook.</li>
+					</ul>
+
+
+					<h3>Twitter Cards</h3>
+					<h4>Kommentarer til koden:</h4>
+					<ul>
+						<li>twitter:card brukes for å definere hvordan type kort det er.</li>
+						<li>twitter:site brukes for å linke mot en twitterkonto for stedet artikkelen/siden kommer fra.</li>
+						<li>twitter:title brukes for å definere tittelen på det som skal deles.</li>
+						<li>twitter:description brukes for å definere en beskrivelse for det elementet som deles.</li>
+						<li>twitter:image brukes for å definere et illustrasjonsbilde for en artikkel/side.</li>
+					</ul>
 				</div>
 			</article>
 		</main>

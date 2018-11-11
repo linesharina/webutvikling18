@@ -11,6 +11,20 @@
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+	<!-- Facebook markup -->
+	<meta property="og:url" content="http://itstud.hiof.no/~linesaa/webutvikling18/oblig5/seo.html" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="SEO - Webutvikling 2018" />
+	<meta property="og:description" content="En artikkel om hva SEO er, viktigheten av SEO og hvilke SEO-tiltak det har blitt gjort på denne siden." />
+	<meta property="og:image" content="http://itstud.hiof.no/~linesaa/webutvikling18/oblig5/img/seo.jpg" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@inntrengeren">
+	<meta name="twitter:title" content="SEO - Webutvikling 2018">
+	<meta name="twitter:description" content="En artikkel om hva SEO er, viktigheten av SEO og hvilke SEO-tiltak det har blitt gjort på denne siden.">
+	<meta name="twitter:image" content="http://itstud.hiof.no/~linesaa/webutvikling18/oblig5/img/seo.jpg">
 </head>
 <body>
 	<a class="jump-to-content" href="#innhold">Hopp til innhold</a>
@@ -67,7 +81,7 @@
 
 					<h4>Verktøy</h4>
 					<p>For å analyse SEO på nettsiden min lastet jeg ned en plugin som heter Checkbot. Den så dermed igjennom siden og kom med tilbakemelding om både feil og hva som var bra.</p>
-					<img src="https://i.xdh.no/2aa9eeb3f1d9" alt="SEO-analyse av mitt nettsted">
+					<img src="https://i.xdh.no/2aa9eeb3f1d9" alt="SEO-analyse av mitt nettsted. Før tiltak.">
 
 					<h3>Tiltak</h3>
 
@@ -90,12 +104,15 @@
 						&lt;/head&gt;
 					</code>
 							
-					<h4>Robot.txt</h4>
-					<p>Hastigheten påvirker også SEO.</p>
+					<h4>Robots.txt</h4>
+					<p>En "robots.txt"-fil bestemmer hvor søkemotorene har lov til å gå og hvor de ikke har lov til å gå. Det er viktig å merke seg at den kun er veiledende og søkemotorer kan ignorere den. </p>
+					<p> Et av tiltakene på denne siden var at det ble lagt til en robots.txt fil på mitt hjemmeomerådet. Denne skulle vel egentlig bli lagt på itstud.hiof.no/robot.txt, men jeg måtte legge den der jeg har tilgang. Filen jeg opprettet inneholder følgende:</p>
+					<code>User-agent: * <br>
+					Disallow:</code>
 
-					<h4>Sitemap</h4>
-
-
+					<h4>Forbedringer</h4>
+					<p>Dette var altså de tiltakene som ble gjort på mitt hjemmeområdet for å forbedre SEO. Når jeg nå kjører testen på nytt på oblig 5 ser vi at SEO-prosenten har økt fra 66% til 73% . Grunnen til at den enda ikke er på 100% er fordi noen av tiltakene må gjøres på serveren, og dette har jeg ikke tilgang til.</p>
+					<img src="https://i.xdh.no/6210eaaf0d7d" alt="SEO-analyse av mitt nettsted. Etter tiltak.">
 				</div>
 			</article>
 		</main>
