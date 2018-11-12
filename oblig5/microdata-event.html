@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nb">
 <head>
-	<title>Artikkel - Microdata - Webutvikling 2018</title>
+	<title>Event - Microdata - Webutvikling 2018</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
 	<meta name="description" content="Dette er en enkel artikkel om microdata som beskriver hva det er, hvorfor det benyttes  og hvilke fordeler det har.">
@@ -52,27 +52,21 @@
 		<main id="innhold" class="articles">
 			<article>
 				<div class="article-content">
-				<h2>Eksempelside for Microdata - Artikkel</h2>
-					<div itemscope itemtype="http://schema.org/Article">
-						<img itemprop="image" src="img/microdata-artikkel.png" alt="Skjermbilde av ny funksjon">
-						<h3 itemprop="headline">Endelig kommer denne funksjonen til iMessage</h3>
-						<time itemprop="datePublished" datetime="2018-08-18">18. August 2018</time>
-						<p>Forfatter: <span itemprop="author">Line Hagen</span></p>
-						<span itemprop="articleBody">
-							<h4>HVA BETYR DETTE?</h4>
-							<p>I mange år har Apple tillatt iMessage-brukere å bruke en e-postadresse som avsender ved siden av telefonnummeret sitt. Denne funksjonen kan for eksempel være nyttig om du ofte endrer telefonnummeret eller reiser mye til utlandet.</p>
-							<p>Som sagt, dette kan være en nyttig funksjon. Problemet er at iOS lager separate meldingstråder for e-postadresser og telefonnummeret, selv om de tilhører samme person. Med iOS 12 vil altså dette irritasjonsmomentet ikke lenger være et problem</p>
-							<p>Med andre ord, hvis  en av dine kontakter sender meldinger fra både e-postadressen og telefonnummeret sitt, vil meldingene fra denne kontakten alltid samle seg i en tråd.</p>
-
-							<h4>HVORDAN TA I BRUK FUNKSJONEN?</h4>
-							<p>I fremtiden vil denne funksjonen være en del av Apples iOS 12 versjon. Akkurat nå er den kun tilgjengelig for beta testere som kjører iOS 12 Beta 8 på deres Apple enheter.</p>
-							<p>Fordi  funksjonen nylig ble introdusert vil ikke brukere med en versjon før iOS Beta 8 kunne bruke den.</p>
-							<p>iOS 12 er forventet og bli sluppet i September.</p>
+				<h2>Eksempelside for Microdata - Event</h2>
+					<div itemscope itemtype="http://schema.org/Event">
+						<img itemprop="image" src="https://i.xdh.no/f8d7db9c07af" alt="Skjermbilde av eventet til julegateåpning i Halden">
+						<h3 itemprop="name">Julegateåpning i Halden 2018</h3>
+						<ul>
+							<li>Starttidspunkt: <time itemprop="startDate" datetime="2018-11-15T16:00">15. november 2018, 16.00</time></li>
+							<li>Sluttidspunkt:<time itemprop="endDate" datetime="2018-11-15T20:00">20.00</time></li>
+							<li itemprop="isAccessibleForFree">Pris: Gratis</li>
+						</ul>
+						<span itemprop="location" itemscope itemtype="http://schema.org/Place">
+							<p>Sted:
+								<span itemprop="address">Storgata, Halden</span>
+							</p>
 						</span>
-						<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-							<p><em>Publisert av <span itemprop="name">Datahjelpen AS</span></em></p>
-							<img itemprop="logo" src="img/datahjelpen-logo.png" alt="Logo: Datahjelpen AS">
-						</span>
+						<p itemprop="about">Julelysene i sentrum tennes, og det blir hyggelig førjulsstemning. Musikalske innslag, langåpent i butikkene og fyrverkeri fra festningen.</p>
 					</div>
 				</div>
 			</article>

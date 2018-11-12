@@ -56,12 +56,91 @@
 					<h2>Microdata</h2>
 					<p>Microdata er en del av WHATWG HTML-standarden og brukes til nesting av metadata for eksisterende innhold på nettsider. Søkemotorer, web crawlers og nettlesere kan trekke ut og behandle mikrodata fra en nettside og bruke den til å forbedre nettleseropplevelsen for brukere.</p>
 					<p>Man bruker microdata fordi det øker semantikken i dataene, gjør dataen lesbar for andre maskiner og gjør internett om til en stor database. </p>
+					<p>Microdata kan legges til ved å bruke attributter på HTML-elementer. Man har:</p>
+					<ul>
+						<li>Itemscope som kan beskrives som "modertaggen"</li>
+						<li>Itemtype er der man putter linken til vokabularet</li>
+						<li>Itemid er en unik id</li>
+						<li>Itemprop er det som beskriver denne taggen</li>
+						<li>Itemref gjør at man kan referere til en itemidi i et annet scope</li>
+					</ul>
 					<p>En fordel med microdata er at det bidrar til at søkemotorer forstår informasjonen på nettsider og dermed kan gi mer relevante resultater til brukerne. Microdata gjør at man får en mulighet ovenfor søkemotorer, skjermlesere og maskiner som leser siden til å gi beskjeder om hva innholdet er og hvorfor det er der.</p>
 					<p>Schema.org er et av vokabularene for microdata og er også en av de mest utbredte. I dette vokabularet har man definisjoner på ting som artikler, arrangement, musikk og forfatter/person.</p>
 
 					<h3>Artikkel</h3>
+					<img src="https://i.xdh.no/1d5061830abc" alt="Eksempelside mikrodata - Artikkel ">
+					<p>Ser at eksempelet får 3 advarsler, men jeg har ikke gjort noe med dette siden det kun er advarsler og ikke feil.</p>
+					<p>I dette eksempelet har jeg benyttet itemtype "Article" og følgende itemprops:</p>
+					<ul>
+						<li>image: Et bilde av artikkelen</li>
+						<li>headline: Overskriften til artikkelen</li>
+						<li>datePublished: Første publiseringsdato for artikkelen</li>
+						<li>author: Artikkelens forfatter</li>
+						<li>articleBody: Selve innholdet til artikkelen</li>
+						<li>publisher: Organisasjonen eller personen som har publisert artikkelen</li>
+						<li>logo: Logo til organisasjonen som publiserte artikkelen. Tilhører itemtype Organization</li>
+					</ul>
+					<a href="microdata-artikkel.html">Trykk her for eksempelsiden for artikkel</a>
 
+					<h3>Person</h3>
+					<img src="https://i.xdh.no/50b033d90960" alt="Eksempelside mikrodata - Person ">
+					<p>Her fikk jeg ingen feil eller advarsler.</p>
+					<p>Jeg har benyttet itemtype "Person" og følgende itemprops for å få til dette:</p>
+					<ul>
+						<li>image: Et bilde av personen</li>
+						<li>name: Navnet til personen</li>
+						<li>birthDate: Datoen personen ble født</li>
+						<li>birthPlace: Stedet personen ble født</li>
+						<li>deathDate: Datoen personen gikk bort</li>
+						<li>brand: Et selskap/merkevare personen er knyttet til</li>
+						<li>parent: En forelder til personen</li>
+						<li>sibling: Søsken av personen</li>
+					</ul>
+					<a href="microdata-person.html">Trykk her for eksempelsiden for person</a>
+
+					<h3>Bok</h3>
+					<img src="https://i.xdh.no/ed6e8a04bc9d" alt="Eksempelside mikrodata - Bok ">
+					<p>Her fikk jeg heller ingen feil eller advarsler.</p>
+					<p>Jeg har benyttet itemtype "Book" og følgende itemprops for å få til dette:</p>
+					<ul>
+						<li>image: Et bilde av boken</li>
+						<li>name: Navnet til boken</li>
+						<li>author: Forfatter til boken</li>
+						<li>inLanguage: Språket boken er skrevet på</li>
+						<li>bookEdition: Utgaven av boken</li>
+						<li>isbn: ISBN-nummeret til boken</li>
+						<li>numberOfPages: Bokens sidetall</li>
+					</ul>
+					<a href="microdata-bok.html">Trykk her for eksempelsiden for bok</a>
 					
+					<h3>Event</h3>
+					<img src="https://i.xdh.no/15598ccc1189" alt="Eksempelside mikrodata - Event ">
+					<p>Her fikk jeg noen advarsler igjen. Felles for alle var at det var anbefalt å legge til om informasjonen var tilgjengelig. Det var det ikke i dette tilfellet.</p>
+					<p>Jeg har benyttet itemtype "Event" og følgende itemprops i denne oppgaven:</p>
+					<ul>
+						<li>image: Et bilde av eventet</li>
+						<li>name: Navnet til eventet</li>
+						<li>startDate: Starttidspunktet til eventet</li>
+						<li>endDate: Sluttidspunkt for eventet</li>
+						<li>isAccessibleForFree: Signaliserer at eventet er gratis</li>
+						<li>address: Adressen til eventet(som barn av itemprop location med itemtype place).</li>
+					</ul>
+					<a href="microdata-event.html">Trykk her for eksempelsiden for event</a>
+
+					<h3>Maleri</h3>
+					<img src="https://i.xdh.no/5dccf51411c6" alt="Eksempelside mikrodata - Maleri ">
+					<p>I denne oppgaven fikk jeg ingen feil eller advarsler.</p>
+					<p>Jeg har benyttet itemtype "Painting" og følgende itemprops i denne oppgaven:</p>
+					<ul>
+						<li>image: Et bilde av maleriet</li>
+						<li>name: Navnet til maleriet</li>
+						<li>about: Beskrivelse av boken</li>
+						<li>creator: Personen som malte maleriet</li>
+						<li>material: Hvilket materiale den er laget av </li>
+						<li>locationCreated: Lokasjonen maleriet ble laget</li>
+						<li>dateCreated: Årstall maleriet ble laget</li>
+					</ul>
+					<a href="microdata-maleri.html">Trykk her for eksempelsiden for maleri</a>
 				</div>
 			</article>
 		</main>
